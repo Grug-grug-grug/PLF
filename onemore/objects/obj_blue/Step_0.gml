@@ -1,0 +1,1 @@
+scr_lightingPulse($EDFF1905,"DOWN")
