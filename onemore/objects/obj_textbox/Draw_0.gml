@@ -6,7 +6,6 @@ textbox_x = camera_get_view_x(view_camera[0])-20;
 textbox_y = camera_get_view_y(view_camera[0]) + 100;
 
 global.game_pause = true;
-global.chat_active = 1;
 // setup
 
 if (setup == false)
@@ -40,8 +39,9 @@ if draw_char < text_length[page]
 }
 
 
+
 // Flip through pages
-if accept_key and global.chat_active == 1
+if accept_key == true and global.chat_active == 1
 {
 		
 	// If typing is done go to next page
@@ -76,6 +76,7 @@ if accept_key and global.chat_active == 1
 }
 
 
+global.chat_active = 1;
 // Draw text box
 var _txtb_x = textbox_x + text_x_offset[page];
 var _txtb_y = textbox_y

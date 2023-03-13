@@ -4,7 +4,7 @@ global.newFont = font_add("blocks-serif.ttf",8,false,false,32,128);
 global.first_key = 0;
 global.key_bedroom = 0;
 
-global.time_left = 60;
+global.time_left = 15;
 global.showtime = global.time_left;
 global.text_speed = 0.75;
 global.game_pause = false;

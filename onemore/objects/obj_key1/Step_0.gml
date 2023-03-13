@@ -8,6 +8,7 @@ global.game_pause = true;
 create_textbox(text_id)
 global.first_key = 1;
 instance_destroy(obj_key1);
+global.chat_active = 0;
 }
 
 

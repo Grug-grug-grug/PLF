@@ -58,13 +58,19 @@ function scr_game_text(_text_id){
 		scr_text("Found the door switch.");
 		break;
 	
+	// First key in bedroom
+	case "oh_dear":
+		scr_text("oh bother");
+		break;
+	
+	
 	// Wake up
 	
 	
 	case "wake_up":
 		if global.current_loop == 1
 		{
-			scr_text("Hi BibiXP, lets have a look around!");
+			scr_text("Time to wake up and have a good day!");
 		}
 		if global.current_loop == 2
 		{
@@ -73,10 +79,7 @@ function scr_game_text(_text_id){
 		if global.current_loop > 2
 		{
 			scr_text("Here we go, round " + string(global.current_loop));
-		}
-		
-		
-		
+		}	
 		break;
 	
 	// Secret safe - combo 1 2 3 3
@@ -147,7 +150,22 @@ function scr_game_text(_text_id){
 	// Stacks of notes in sleeping room
 	
 	case "sleeping_note_stack_1":
-		scr_text("Looks like its talking about Kim's safe");
+		scr_text("*The doors rooms need to be locked at all time. You have all demonstrated you cannot be trusted*")
+		scr_text("*I know we have been up here a while, but that is no reason to get complacent*");
+		scr_text("*It's just basic safety, it's like you want something to go wrong*");
+		scr_text("*The doors will now auto-lock after 5 minutes and you need to put in the code to unlock*");
+		scr_text("* - Kim aka someone who actually cares....*");
+			
+		break;
+		
+	// Stack of note in second bedroom - safe clue
+	case "secret_safe_solution":
+		scr_text("*Patterns are the only way I can remember anything*");
+		scr_text("*So to keep it simple*");
+		scr_text("*There is only one one*");
+		scr_text("*And there is one two too*");
+		scr_text("*And there is more then one three too aswell*");
+		scr_text("* - Kim aka the one who locks*");
 		break;
 	
 	case "npc1":

@@ -7,4 +7,4 @@ event_inherited();
 xspd = 0;
 yspd = 0;
 
-move_spd = 3;
+move_spd = 1.5;

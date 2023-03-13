@@ -3,7 +3,7 @@
 textbox_width = 280;
 textbox_height = 70;
 border = 6;
-line_sep = 6;
+line_sep = 12;
 line_width = textbox_width - border * 2;
 txtb_spr = spr_textbox;
 txtb_img = 0;
@@ -14,8 +14,6 @@ depth = -9999;
 page = 0;
 page_number = 0;
 text[0] = "";
-//text[1] = "wordsjhgjhvliugk words words word2222s";
-//text[2] = "words words wordfdgsdfgsrger333333s words";
 text_length[0] = string_length(text[0]);
 draw_char = 0;
 text_speed = 1;
