@@ -64,11 +64,11 @@ function scr_game_text(_text_id){
 	case "wake_up":
 		if global.current_loop == 1
 		{
-			scr_text("Wowee, I'm super exited about another ordinary day!");
+			scr_text("Hi BibiXP, lets have a look around!");
 		}
 		if global.current_loop == 2
 		{
-			scr_text("Hmmm, what the flip just happened....");
+			scr_text("Hmmm, looks like its a time loop....");
 		}
 		if global.current_loop > 2
 		{
@@ -217,7 +217,7 @@ function scr_game_text(_text_id){
 	
 	// Key in first bedroom
 	case "first_key":
-		scr_text("You found a key. Yaya.");
+		scr_text("You found a key.");
 		break;
 	
 	

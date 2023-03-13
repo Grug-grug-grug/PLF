@@ -1,3 +1,3 @@
 /// @desc ???
 
-scr_lightingPulse($ED00992D,"DOWN");
+scr_lightingPulse($ED00B200,"DOWN");

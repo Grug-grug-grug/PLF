@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_player",
   "spriteId": {
-    "name": "spr_player",
-    "path": "sprites/spr_player/spr_player.yy",
+    "name": "Blue_spacesuit",
+    "path": "sprites/Blue_spacesuit/Blue_spacesuit.yy",
   },
   "solid": false,
   "visible": true,

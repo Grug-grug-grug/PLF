@@ -1,9 +1,9 @@
 /// @desc Text box stuff
 
-textbox_width = 550;
-textbox_height = 100;
-border = 4;
-line_sep = 12;
+textbox_width = 280;
+textbox_height = 70;
+border = 6;
+line_sep = 6;
 line_width = textbox_width - border * 2;
 txtb_spr = spr_textbox;
 txtb_img = 0;
