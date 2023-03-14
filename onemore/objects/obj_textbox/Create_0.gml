@@ -1,7 +1,7 @@
 /// @desc Text box stuff
 
 textbox_width = 280;
-textbox_height = 70;
+textbox_height = 40;
 border = 6;
 line_sep = 12;
 line_width = textbox_width - border * 2;

@@ -3,7 +3,7 @@
 accept_key = keyboard_check_pressed(vk_space);
 
 textbox_x = camera_get_view_x(view_camera[0])-20;
-textbox_y = camera_get_view_y(view_camera[0]) + 100;
+textbox_y = camera_get_view_y(view_camera[0]) + 130;
 
 global.game_pause = true;
 // setup
@@ -101,7 +101,7 @@ if draw_char == text_length[page] && page = page_number - 1
 	
 	
 	//draw the options
-	var _op_space = 30;
+	var _op_space = 20;
 	var _op_bord = 6;
 	for (var op = 0; op < option_number; op++)
 		{

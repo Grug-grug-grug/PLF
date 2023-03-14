@@ -57,8 +57,122 @@ function scr_game_text(_text_id){
 	case "key_bedroom":
 		scr_text("Found the door switch.");
 		break;
+		
+	case "bedroom_notes_1":
+		scr_text("My room and just the way I like it - chaos.");
+		break;
+			
+	case "bedroom_notes_2":
+		scr_text("Books and notes everywhere - why am I like this...");
+		break;
+			
+	case "bedroom_notes_3":
+		scr_text("*I don't know why I have to keep reminding everyone, but your passcode will need to be changed every 14 days*");
+		scr_text("*This is day one stuff guys, help me help you*");
+		scr_text("*Kim - admin and apparant passcodeking*");
+		break;
+			
+	case "bedroom_notes_4":
+		scr_text("A book on dogs. A dog book.");
+		break;
+			
+	case "bedroom_notes_5":
+		scr_text("Various books on various topics.");
+		break;
+			
+	case "bedroom_notes_6":
+		scr_text("*Note to self - keep passcode somewhere I spend most of my time - me*");
+		global.bb_note = true;
+		break;
+				
+	case "bedroom_notes_7":
+		scr_text("A book about space, I will get to it one day");
+		break;
+			
+	case "bedroom_notes_8":
+		scr_text("*Due to complete indifference, I will now update everyone's passcode.*");
+		scr_text("*Please find attached your new passcode*")
+		scr_text("Looks like I ripped off the new door code...");
+		break;
+		
+	case "beanbag_myroom":
+		scr_text("A comfy womfy bean bag - my favourite place");
+		if global.bb_note == true
+		{
+			scr_text("...and a note that says 2123");
+		}
+		break;
+		
+	case "bedroom_table":
+		scr_text("Look at this, keeping their notes tidy and on a table. What a dork.");
+		break;
 	
-	// First key in bedroom
+	// Room code 2123
+	case "the_first_door":
+		if global.bb_door == 4
+		{
+			scr_text("Already open my dude");
+			break;
+		}
+		if global.bb_door == 0
+		{
+		scr_text("Lets do this thang");
+			scr_option("1", "bb_incorrect");
+			scr_option("2", "1st_b_correct");
+			scr_option("3", "bb_incorrect");
+		break;
+		}
+		
+	case "1st_b_correct":
+	    global.bb_door += 1;
+		scr_text("And then...");
+		scr_option("1", "2nd_bb_correct");
+		scr_option("2", "bb_incorrect");
+		scr_option("3", "bb_incorrect");
+		break;
+		
+	case "2nd_bb_correct":
+		global.bb_door += 1;
+		scr_text("And then...");
+		scr_option("1", "bb_incorrect");
+		scr_option("2", "3rd_bb_correct");
+		scr_option("3", "bb_incorrect");
+		break;
+		
+	case "3rd_bb_correct":
+		global.bb_door += 1;
+		scr_text("And then...");
+		scr_option("1", "bb_incorrect");
+		scr_option("2", "bb_incorrect");
+		scr_option("3", "bb_door_open");
+		break;	
+		
+	case "bb_door_open":
+		scr_text("Got it!");
+		global.bb_door = 4;
+		break;
+
+	
+	case "bb_incorrect":
+
+		if global.bb_door < 3
+		{
+			
+			scr_text("And then...");
+			scr_option("1", "bb_incorrect");
+			scr_option("2", "bb_incorrect");
+			scr_option("3", "bb_incorrect");
+			global.bb_door += 1; 
+			break;
+		}
+		if global.bb_door  == 3
+		{
+			scr_text("Dang!");
+			global.bb_door = 0;
+			break;
+		}
+	
+	// Not sure
 	case "oh_dear":
 		scr_text("oh bother");
 		break;

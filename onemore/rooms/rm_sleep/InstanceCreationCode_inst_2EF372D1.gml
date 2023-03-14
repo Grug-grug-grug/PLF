@@ -1,1 +1,1 @@
-text_id = "sleeping_note_stack_1";
+text_id = "sleeping_stack_1";

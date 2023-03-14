@@ -1,6 +1,6 @@
 /// @desc ???
 
-if global.key_bedroom
+if global.bb_door == 4
 	{
 		instance_destroy(obj_destruct);
 	}
