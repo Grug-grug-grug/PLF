@@ -2,7 +2,7 @@
 randomize();
 global.newFont = font_add("blocks-serif.ttf",8,false,false,32,128);
 
-global.time_left = 10;
+global.time_left = 30;
 global.text_speed = 0.75;
 global.game_pause = false;
 global.loopnumber = irandom_range(100000,120000);

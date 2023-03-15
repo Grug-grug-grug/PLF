@@ -155,6 +155,7 @@
     {"id":{"name":"Storage_1","path":"sprites/Storage_1/Storage_1.yy",},"order":10,},
     {"id":{"name":"light_create","path":"scripts/light_create/light_create.yy",},"order":5,},
     {"id":{"name":"shadow_map_ensure_exists","path":"scripts/shadow_map_ensure_exists/shadow_map_ensure_exists.yy",},"order":9,},
+    {"id":{"name":"obj_fullscreen","path":"objects/obj_fullscreen/obj_fullscreen.yy",},"order":16,},
     {"id":{"name":"Bean_bag_red","path":"sprites/Bean_bag_red/Bean_bag_red.yy",},"order":21,},
     {"id":{"name":"lighting_get_active_camera","path":"scripts/lighting_get_active_camera/lighting_get_active_camera.yy",},"order":2,},
     {"id":{"name":"Loose_paper_2","path":"sprites/Loose_paper_2/Loose_paper_2.yy",},"order":2,},

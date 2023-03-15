@@ -190,11 +190,11 @@ function scr_game_text(_text_id){
 	case "wake_up":
 		if global.current_loop == 1
 		{
-			scr_text("Time to wake up and have a good day!");
+			scr_text("What a wonderful, ordinary good day!");
 		}
 		if global.current_loop == 2
 		{
-			scr_text("Hmmm, looks like its a time loop....");
+			scr_text("Oh dear....");
 		}
 		if global.current_loop > 2
 		{

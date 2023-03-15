@@ -12,7 +12,7 @@ if global.time_left < 0
 	{
 
 		var bonus_room = int64(random_range(0,10));
-		if bonus_room < 5
+		if bonus_room < 11
 		{
 			obj_player.x = 96;
 			obj_player.y = 576;
@@ -23,7 +23,7 @@ if global.time_left < 0
 			global.newloop = 1;
 			audio_stop_all();
 		}
-		if bonus_room > 4
+		if bonus_room > 14
 		{
 			obj_player.x = 96;
 			obj_player.y = 576;
