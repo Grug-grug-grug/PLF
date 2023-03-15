@@ -173,6 +173,12 @@ function scr_game_text(_text_id){
 		}
 	
 	// Not sure
+	case "secret_block":
+		scr_text("what the gibbons");
+		global.secret_block = 1;
+		break;
+	
+	// Not sure
 	case "oh_dear":
 		scr_text("oh bother");
 		break;

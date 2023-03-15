@@ -2,13 +2,13 @@
 if global.game_pause = false
 {
 	
-right_key = keyboard_check(vk_right);
-left_key = keyboard_check(vk_left);
-up_key = keyboard_check(vk_up);
-down_key = keyboard_check(vk_down);
+var right_key = keyboard_check(vk_right);
+var left_key = keyboard_check(vk_left);
+var up_key = keyboard_check(vk_up);
+var down_key = keyboard_check(vk_down);
 
-xspd = (right_key - left_key) * move_spd;
-yspd = (down_key - up_key) * move_spd;
+var xspd = (right_key - left_key) * move_spd;
+var yspd = (down_key - up_key) * move_spd;
 global.chat_active = 0;
 // animation
 if up_key //As long as I hold W it repeats subimages 1 + 2, my animation walking up

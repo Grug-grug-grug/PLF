@@ -75,7 +75,6 @@
     {"id":{"name":"Galaxy_background","path":"sprites/Galaxy_background/Galaxy_background.yy",},"order":7,},
     {"id":{"name":"spr_speaker","path":"sprites/spr_speaker/spr_speaker.yy",},"order":5,},
     {"id":{"name":"Plant_Storage_1","path":"sprites/Plant_Storage_1/Plant_Storage_1.yy",},"order":2,},
-    {"id":{"name":"obj_yellow","path":"objects/obj_yellow/obj_yellow.yy",},"order":2,},
     {"id":{"name":"Small_box_yellow","path":"sprites/Small_box_yellow/Small_box_yellow.yy",},"order":9,},
     {"id":{"name":"obj_destruct","path":"objects/obj_destruct/obj_destruct.yy",},"order":5,},
     {"id":{"name":"Big_Plant_Storage_4","path":"sprites/Big_Plant_Storage_4/Big_Plant_Storage_4.yy",},"order":13,},
@@ -118,6 +117,7 @@
     {"id":{"name":"Bedroom_Area_Floor_and_Walls","path":"sprites/Bedroom_Area_Floor_and_Walls/Bedroom_Area_Floor_and_Walls.yy",},"order":6,},
     {"id":{"name":"spr_key1","path":"sprites/spr_key1/spr_key1.yy",},"order":3,},
     {"id":{"name":"obj_settings","path":"objects/obj_settings/obj_settings.yy",},"order":1,},
+    {"id":{"name":"rm_bonus_1","path":"rooms/rm_bonus_1/rm_bonus_1.yy",},"order":5,},
     {"id":{"name":"get_next_pot","path":"scripts/get_next_pot/get_next_pot.yy",},"order":1,},
     {"id":{"name":"rm_kitchen","path":"rooms/rm_kitchen/rm_kitchen.yy",},"order":3,},
     {"id":{"name":"lighting_free","path":"scripts/lighting_free/lighting_free.yy",},"order":6,},
@@ -213,6 +213,7 @@
     {"roomId":{"name":"rm_kitchen","path":"rooms/rm_kitchen/rm_kitchen.yy",},},
     {"roomId":{"name":"rm_engine","path":"rooms/rm_engine/rm_engine.yy",},},
     {"roomId":{"name":"Room6","path":"rooms/Room6/Room6.yy",},},
+    {"roomId":{"name":"rm_bonus_1","path":"rooms/rm_bonus_1/rm_bonus_1.yy",},},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sprites","folderPath":"folders/Sprites.yy","order":1,},
