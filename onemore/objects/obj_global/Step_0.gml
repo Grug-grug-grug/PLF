@@ -17,7 +17,7 @@ if global.time_left < 0
 			obj_player.x = 96;
 			obj_player.y = 576;
 			room_goto(rm_sleep);
-			global.time_left = int64(random_range(5, 10));
+			global.time_left = int64(random_range(60, 70));
 			global.loopnumber += 1;
 			global.current_loop += 1;
 			global.newloop = 1;

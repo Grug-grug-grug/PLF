@@ -183,7 +183,39 @@ function scr_game_text(_text_id){
 		scr_text("oh bother");
 		break;
 	
+	// Plants in BB
+	case "bb_book_1":
+		scr_text("The first edition of a book");
+		break;
 	
+	case "bb_book_2":
+		scr_text("The sequel to some YA vampire novel");
+		break;
+		
+	case "bb_book_3":
+		scr_text("Third times a charm");
+		break;
+		
+	case "bb_book_4":
+		scr_text("The final chapter");
+		break;
+		
+	case "bb_plant_1":
+		scr_text("Plant 1");
+		break;
+	
+	case "bb_plant_2":
+		scr_text("Plant 2");
+		break;
+		
+	case "bb_plant_3":
+		scr_text("Plant 3");
+		break;
+		
+	case "bb_plant_4":
+		scr_text("Plant 4");
+		break;
+
 	// Wake up
 	
 	
