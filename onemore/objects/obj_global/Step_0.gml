@@ -25,8 +25,8 @@ if global.time_left < 0
 		}
 		if bonus_room > 14
 		{
-			obj_player.x = 96;
-			obj_player.y = 576;
+			obj_player.x = 500;
+			obj_player.y = 400;
 			room_goto(rm_bonus_1);
 			global.time_left = int64(random_range(5, 10));
 			global.loopnumber += 1;

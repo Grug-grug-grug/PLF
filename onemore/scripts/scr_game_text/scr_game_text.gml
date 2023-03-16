@@ -2,6 +2,23 @@
 function scr_game_text(_text_id){
 	
 	switch(_text_id) {
+	// test walkover text box
+	case "test1":
+		scr_text("I see you");
+		break;
+	
+	case "test2":
+		scr_text("what the gibbons");
+		break;
+	
+		
+	// Start game
+	case "start_game":
+		scr_text("Ah, this dream again");
+		scr_text("If I didn't know any better, I would say this means something");
+		scr_text("But I don't, and it doesn't");
+		scr_text("So I'll have a quick look around before I wake up");
+		break;
 		
 	// maybe generic text
 	case "door_closed":
@@ -220,15 +237,15 @@ function scr_game_text(_text_id){
 	
 	
 	case "wake_up":
-		if global.current_loop == 1
+		if global.current_loop == 2
 		{
 			scr_text("What a wonderful, ordinary good day!");
 		}
-		if global.current_loop == 2
+		if global.current_loop == 3
 		{
 			scr_text("Oh dear....");
 		}
-		if global.current_loop > 2
+		if global.current_loop > 3
 		{
 			scr_text("Here we go, round " + string(global.current_loop));
 		}	

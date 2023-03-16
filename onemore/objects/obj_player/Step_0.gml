@@ -10,6 +10,8 @@ var down_key = keyboard_check(vk_down);
 var xspd = (right_key - left_key) * move_spd;
 var yspd = (down_key - up_key) * move_spd;
 global.chat_active = 0;
+
+global.no_txt_sprite = false;
 // animation
 if up_key //As long as I hold W it repeats subimages 1 + 2, my animation walking up
 { 

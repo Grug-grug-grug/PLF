@@ -6,6 +6,8 @@ textbox_x = camera_get_view_x(view_camera[0])-20;
 textbox_y = camera_get_view_y(view_camera[0]) + 130;
 
 global.game_pause = true;
+
+
 // setup
 
 if (setup == false)

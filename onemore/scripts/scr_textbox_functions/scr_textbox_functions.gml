@@ -2,7 +2,7 @@
 function scr_text(_text){
 	
 	text[page_number] = _text;
-	
+	//txtb_spr = _background;
 	page_number ++;
 	
 

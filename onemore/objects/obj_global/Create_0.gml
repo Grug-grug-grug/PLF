@@ -2,13 +2,14 @@
 randomize();
 global.newFont = font_add("blocks-serif.ttf",8,false,false,32,128);
 
-global.time_left = 30;
+global.time_left = 2;
 global.text_speed = 0.75;
 global.game_pause = false;
 global.loopnumber = irandom_range(100000,120000);
 global.current_loop = 1;
 global.newloop = 1;
 global.chat_active = 0;
+global.no_txt_sprite = false;
 
 // Sleep room keys
 global.secret_block = 0;
