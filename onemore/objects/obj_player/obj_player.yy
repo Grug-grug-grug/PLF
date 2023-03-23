@@ -2,15 +2,12 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "obj_player",
-  "spriteId": {
-    "name": "Blue_spacesuit",
-    "path": "sprites/Blue_spacesuit/Blue_spacesuit.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
-  "persistent": true,
+  "persistent": false,
   "parentObjectId": {
     "name": "obj_shadow_caster",
     "path": "objects/obj_shadow_caster/obj_shadow_caster.yy",
