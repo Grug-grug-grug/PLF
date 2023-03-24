@@ -1,13 +1,17 @@
 /// @desc ???
+//global.text_centre = false;
 
 if global.time_left > 0 && global.game_pause == false
 	{
 		global.newloop = 0;
 		global.time_left = global.time_left - delta_time/1000000;
 	}
-
-	
-
+/*
+if global.time_left > 0.1 && global.time_left < 0.11
+	{
+		create_textbox("creepy_3");
+	}
+*/
 if global.time_left < 0
 	{
 

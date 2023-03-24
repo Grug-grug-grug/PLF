@@ -6,10 +6,7 @@ border = 6;
 line_sep = 12;
 line_width = textbox_width - border * 2;
 txtb_spr = spr_textbox;
-if global.no_txt_sprite = true
-{
-	txtb_spr = spr_none;
-}
+
 txtb_img = 0;
 txtb_img_spd = 0;
 depth = -9999;

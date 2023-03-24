@@ -1,10 +1,11 @@
 /// @param text
-function scr_text(_text){
+function scr_text(_text, _txt_speed = 1, _txtbackground = spr_textbox)
+{
 	
 	text[page_number] = _text;
-	//txtb_spr = _background;
+	text_speed = _txt_speed;
+	txtb_spr = _txtbackground;
 	page_number ++;
-	
 
 }
 

@@ -2,11 +2,20 @@
 
 accept_key = keyboard_check_pressed(vk_space);
 
-textbox_x = camera_get_view_x(view_camera[0])-20;
-textbox_y = camera_get_view_y(view_camera[0]) + 130;
+
+
 
 global.game_pause = true;
-
+if global.text_centre == true
+{
+	textbox_x = camera_get_view_x(view_camera[0])-50;
+	textbox_y = camera_get_view_y(view_camera[0])-10;
+}
+if global.text_centre == false
+{
+	textbox_x = camera_get_view_x(view_camera[0])-20;
+	textbox_y = camera_get_view_y(view_camera[0]) + 130;
+}
 
 // setup
 

@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_walkovertalk",
+  "name": "obj_walkovertalk_normal",
   "spriteId": {
     "name": "spr_speaker",
     "path": "sprites/spr_speaker/spr_speaker.yy",

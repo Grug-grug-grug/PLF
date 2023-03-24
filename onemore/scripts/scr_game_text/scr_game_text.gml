@@ -2,22 +2,33 @@
 function scr_game_text(_text_id){
 	
 	switch(_text_id) {
+	case "response_creepy_1":
+		scr_text("I really hate this ", 1, spr_none);
+		break;
+	
+	case "response_creepy_2":
+		scr_text("So so so much", 1, spr_none);
+		break;
+	
+	
 	// test walkover text box
-	case "test1":
-		scr_text("I see you");
+	case "creepy_1":
+		scr_text(" t h i s d o e s n o t m a t t e r ", 0.1, spr_none);
 		break;
 	
-	case "test2":
-		scr_text("what the gibbons");
+	case "creepy_2":
+		scr_text("thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter ", 10, spr_none);
 		break;
 	
+	case "creepy_3":
+		scr_text(" p o i n t l e s s ", 0.1, spr_none);
+		break;
 		
 	// Start game
 	case "start_game":
-		scr_text("Ah, this dream again");
-		scr_text("If I didn't know any better, I would say this means something");
-		scr_text("But I don't, and it doesn't");
-		scr_text("So I'll have a quick look around before I wake up");
+		scr_text("Ah, this dream again", 1, spr_none);
+		scr_text("If I didn't know any better, I would say this means something", 1, spr_none);
+		scr_text("But I don't, and it doesn't", 1, spr_none);
 		break;
 		
 	// maybe generic text
@@ -71,10 +82,6 @@ function scr_game_text(_text_id){
 		break;
 	
 	// First key in bedroom
-	case "key_bedroom":
-		scr_text("Found the door switch.");
-		break;
-		
 	case "bedroom_notes_1":
 		scr_text("My room and just the way I like it - chaos.");
 		break;
@@ -199,7 +206,18 @@ function scr_game_text(_text_id){
 	case "oh_dear":
 		scr_text("oh bother");
 		break;
-	
+		
+	// Plants in BB
+	case "bb_computer":
+		scr_text(".....");
+		scr_text("...........");
+		scr_text("...booting...");
+		scr_text("...booting...");
+		scr_text("...complete...");
+		scr_text("...complete...");
+		scr_text("...complete...");
+		break;
+		
 	// Plants in BB
 	case "bb_book_1":
 		scr_text("The first edition of a book");

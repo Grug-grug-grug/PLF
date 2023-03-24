@@ -9,7 +9,7 @@ global.loopnumber = irandom_range(100000,120000);
 global.current_loop = 1;
 global.newloop = 1;
 global.chat_active = 0;
-global.no_txt_sprite = false;
+global.text_centre = false;
 
 // Sleep room keys
 global.secret_block = 0;

@@ -8,16 +8,16 @@ if global.game_pause = false
 global.chat_active = 0;
 global.text_centre = false;
 
-var right_key = keyboard_check(vk_right);
-var left_key = keyboard_check(vk_left);
-var up_key = keyboard_check(vk_up);
-var down_key = keyboard_check(vk_down);
+var right_key = keyboard_check(vk_left);
+var left_key = keyboard_check(vk_right);
+var up_key = keyboard_check(vk_down);
+var down_key = keyboard_check(vk_up);
 
 var xspd = (right_key - left_key) * move_spd;
 var yspd = (down_key - up_key) * move_spd;
 
 
-
+image_blend = c_black;
 if room == rm_first_room
 {
 spinny =  true;
@@ -26,10 +26,11 @@ if room != rm_first_room
 {
 	spinny = false;
 	image_angle = 0;
+	
 }
 if spinny == true
 {
-	image_angle += 1;
+	image_angle -= 1;
 }
 // animation
 
