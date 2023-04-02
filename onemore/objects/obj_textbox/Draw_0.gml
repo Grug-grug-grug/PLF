@@ -23,7 +23,7 @@ if (setup == false)
 	{
 		
 		setup = true;
-		draw_set_font(global.newFont);
+		draw_set_font(text_box_font);
 		draw_set_valign(fa_top);
 		draw_set_halign(fa_left);
 		

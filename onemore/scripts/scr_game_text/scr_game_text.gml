@@ -7,13 +7,13 @@ function scr_game_text(_text_id){
 		break;
 	
 	case "response_creepy_2":
-		scr_text("So so so much", 1, spr_none);
+		scr_text("This is sucky", 1, spr_none);
 		break;
 	
 	
 	// test walkover text box
-	case "creepy_1":
-		scr_text(" t h i s d o e s n o t m a t t e r ", 0.1, spr_none);
+	case "creepy_1":     
+		scr_text(" t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r ", 10  , spr_none);
 		break;
 	
 	case "creepy_2":
@@ -21,7 +21,12 @@ function scr_game_text(_text_id){
 		break;
 	
 	case "creepy_3":
-		scr_text(" p o i n t l e s s ", 0.1, spr_none);
+		scr_text("thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter ", 10, spr_none, 0);
+		break;
+		
+	case "creepy_4":
+		scr_text("thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter ", 10, spr_none, 2);
+		global.time_left = 0.01;
 		break;
 		
 	// Start game
@@ -209,13 +214,13 @@ function scr_game_text(_text_id){
 		
 	// Plants in BB
 	case "bb_computer":
-		scr_text(".....");
+		scr_text("...starting...");
 		scr_text("...........");
 		scr_text("...booting...");
-		scr_text("...booting...");
-		scr_text("...complete...");
-		scr_text("...complete...");
-		scr_text("...complete...");
+		scr_text("...........");
+		scr_text("...[ERROR - 10221]...");
+		scr_text("...[ERROR - 10221]...");
+		scr_text(" j u s t s t o p i t w h y a r e y o u b o t h e r i n g i t d o e s n o t m a t t e r ");
 		break;
 		
 	// Plants in BB
@@ -257,7 +262,7 @@ function scr_game_text(_text_id){
 	case "wake_up":
 		if global.current_loop == 2
 		{
-			scr_text("What a wonderful, ordinary good day!");
+			scr_text("Wow, that dream was just the worst!");
 		}
 		if global.current_loop == 3
 		{
@@ -472,13 +477,13 @@ function scr_game_text(_text_id){
 		
 	// Other computer
 	case "otherComputer":
-		scr_text(";LKiajicaaAKMO)(m0319rmqefFFFFfffff");
-		scr_text("...................");
-		scr_text("...................");
+		scr_text("....starting.......");
 		scr_text("...................");
 		scr_text("...................");
 		scr_text(string(global.time_left));
 		scr_text(string(global.loopnumber));
+		scr_text("...................");
+		scr_text(".......[ERROR - 33610]............");
 		scr_text("*Fun, I wonder what that's about*");
 		break;
 	}

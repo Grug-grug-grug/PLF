@@ -7,7 +7,7 @@
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
-  "persistent": false,
+  "persistent": true,
   "parentObjectId": {
     "name": "obj_shadow_caster",
     "path": "objects/obj_shadow_caster/obj_shadow_caster.yy",

@@ -1,1 +1,1 @@
-scr_lightingPulse($EDFF1905,"DOWN")
+scr_lightingPulse($EDFF7819,"DOWN")

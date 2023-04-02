@@ -1,7 +1,7 @@
 /// @param text
-function scr_text(_text, _txt_speed = 1, _txtbackground = spr_textbox)
+function scr_text(_text, _txt_speed = 1, _txtbackground = spr_textbox, _border = 6)
 {
-	
+	border = _border;
 	text[page_number] = _text;
 	text_speed = _txt_speed;
 	txtb_spr = _txtbackground;

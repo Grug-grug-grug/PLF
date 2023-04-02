@@ -1,1 +1,1 @@
-scr_lightingPulse($EDFF1905,"UP");
+scr_lightingPulse($EDFFA565,"UP");

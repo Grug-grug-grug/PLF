@@ -1,6 +1,7 @@
 /// @desc ???
 randomize();
-global.newFont = font_add("blocks-serif.ttf",8,false,false,32,128);
+global.newFont = font_add("blocks-extended.ttf",7,true,false,32,128);
+global.newFontLarge = font_add("blocks-serif.ttf",30,false,false,32,128);
 
 global.time_left = 10;
 global.text_speed = 0.75;

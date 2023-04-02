@@ -1,5 +1,7 @@
 /// @desc Text box stuff
 
+text_box_font = global.newFont;
+
 textbox_width = 280;
 textbox_height = 40;
 border = 6;

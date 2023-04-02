@@ -145,6 +145,7 @@
     {"id":{"name":"Bedroom_Area","path":"sprites/Bedroom_Area/Bedroom_Area.yy",},"order":3,},
     {"id":{"name":"spr_textbox","path":"sprites/spr_textbox/spr_textbox.yy",},"order":0,},
     {"id":{"name":"obj_puzzle_3","path":"objects/obj_puzzle_3/obj_puzzle_3.yy",},"order":2,},
+    {"id":{"name":"blockFont","path":"extensions/blockFont/blockFont.yy",},"order":1,},
     {"id":{"name":"light_create_extension","path":"scripts/light_create_extension/light_create_extension.yy",},"order":2,},
     {"id":{"name":"shadow_casters_exist","path":"scripts/shadow_casters_exist/shadow_casters_exist.yy",},"order":8,},
     {"id":{"name":"obj_text","path":"objects/obj_text/obj_text.yy",},"order":0,},
