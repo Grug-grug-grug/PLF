@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_global",
+  "name": "obj_global_othervalues",
   "spriteId": null,
   "solid": false,
   "visible": true,

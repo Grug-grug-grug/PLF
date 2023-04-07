@@ -6,7 +6,7 @@ function scr_game_text(_text_id){
 
 		
 	case "intro_text":
-		scr_text("As we approach the end of 24XX, humanity has reached the stars. Through exciting new technology, the crew of XXX are able to travel outside the heliosphere to test the ability to create and destroy a new energy source - a blackhole. It was theorised Hawking radiation would provide limitless energy, and the opportunity to study a blackhole allows humanity to peak into the creative forces of the universe. ", .4, spr_none,10,true,310);
+		scr_text("As we approach the end of 24XX, humanity has reached the stars. Through exciting new technology, the crew of XXX are able to travel outside the heliosphere to test the ability to create and destroy a new energy source - a blackhole. It was theorised Hawking radiation would provide limitless energy, and the opportunity to study a blackhole allows humanity to peak into the creative forces of the universe. ", .4, spr_none,10,true,310, global.newFontBoss);
 		
 		break;
 		
@@ -40,7 +40,7 @@ function scr_game_text(_text_id){
 	// Start game
 	case "start_game":
 		scr_text("Ah, this dream again", 1, spr_none);
-		scr_text("If I didn't know any better, I would say this means something", 1, spr_none);
+		scr_text("If I didn't know any better, I would say this means something", 1, spr_eye);
 		scr_text("But I don't, and it doesn't", 1, spr_none);
 		break;
 		
@@ -326,6 +326,16 @@ function scr_game_text(_text_id){
 			scr_text(".......");
 			scr_text("I should probably go start prepping everyones breakfast");
 		}
+		if global.boss_01_outcome =! 0 and global.boss_01_outcome_wakeup == 0
+		{
+			scr_text("....");
+			scr_text("....");
+			scr_text("....");
+			scr_text("....");
+			scr_text("....");
+			scr_text("What the hell was that about....");
+			global.boss_01_outcome_wakeup = 1;
+		}
 		if global.current_loop == 2
 		{
 			scr_text("Oh dear....");
@@ -548,6 +558,43 @@ function scr_game_text(_text_id){
 		scr_text(".......[ERROR - 33610]............");
 		scr_text("*Fun, I wonder what that's about*");
 		break;
-	}
 	
+	
+	// Other computer
+	case "boss_01":
+		scr_text(".......hello.......",0.1,spr_textbox,6,false,280,global.newFontBoss);
+		scr_text(".......ivebeenwaitingforyou.......",0.1,spr_textbox,6,false,280,global.newFontBoss);
+		scr_text(".......forsolong.......",0.1,spr_textbox,6,false,280,global.newFontBoss);
+		scr_text(".......tellme.......",0.1,spr_textbox,6,false,280,global.newFontBoss);
+		scr_text(".......whatwouldyoudoifnothingmattered.......",0.1,spr_textbox,6,false,280,global.newFontBoss);
+		scr_text(".......whatifitoldyouicouldmakeyou.......",0.1,spr_textbox,6,false,280,global.newFontBoss);
+		scr_text(".......ifichangedyoutoknoweverything.......",0.1,spr_textbox,6,false,280,global.newFontBoss);
+		scr_text(".......youcouldhelpeveryone.......",0.1,spr_textbox,6,false,280,global.newFontBoss);
+		scr_text(".......fixeverything.......",0.1,spr_textbox,6,false,280,global.newFontBoss);
+		scr_text(".......butYOUwouldnotremain.......",0.1,spr_textbox,6,false,280,global.newFontBoss);
+		scr_text(".......becomeonewithus.......",0.1,spr_textbox,6,false,280,global.newFontBoss);
+		scr_text(".......wouldYOUsacrificeYOUtohelp.......",0.1,spr_textbox,6,false,280,global.newFontBoss);
+		scr_text(" e v e r y o n e ",0.1,spr_textbox,6,false,280,global.newFontBoss);
+		scr_text(".......well....?...",0.1,spr_textbox,6,false,280,global.newFontBoss);
+		
+		scr_option("In a heartbeat","boss_01_a");
+		scr_option("Not a chance","boss_01_b");
+		scr_option("I'd need to know way more","boss_01_c");
+		break;
+		
+	case "boss_01_a":
+		scr_text(".......interesting....1...",0.1,spr_textbox,6,false,280,global.newFontBoss);
+		global.boss_01_outcome = 1;
+		break;
+		
+	case "boss_01_b":
+		scr_text(".......interesting....2...",0.1,spr_textbox,6,false,280,global.newFontBoss);
+		global.boss_01_outcome = 2;
+		break;
+		
+	case "boss_01_c":
+		scr_text(".......interesting....3...",0.1,spr_textbox,6,false,280,global.newFontBoss);
+		global.boss_01_outcome = 3;
+		break;
+	}
 }
