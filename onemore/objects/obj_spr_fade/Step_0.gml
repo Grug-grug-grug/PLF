@@ -14,4 +14,3 @@ if time_left / 10 mod 2 != 0
 }
 
 
-
