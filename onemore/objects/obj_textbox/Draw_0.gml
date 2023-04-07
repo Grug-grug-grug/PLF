@@ -36,8 +36,8 @@ if (setup == false)
 			text_length[p] = string_length(text[p]);
 			
 			// Get the x position for the textbox
-				// No character - centering textbox on screen 
-				text_x_offset[p] = 44;
+			// No character - centering textbox on screen 
+			text_x_offset[p] = 44;
 		}		
 			
 	
@@ -89,12 +89,21 @@ if accept_key == true and global.chat_active == 1
 
 global.chat_active = 1;
 // Draw text box
-var _txtb_x = textbox_x + text_x_offset[page];
+
 var _txtb_y = textbox_y
 
 // Draw the text
 txtb_img += txtb_img_spd;
-txtb_spr_w = sprite_get_width(txtb_spr);
+if textbox_width == 280
+{
+	var _txtb_x = textbox_x + text_x_offset[page];
+	txtb_spr_w = sprite_get_width(txtb_spr);
+}
+if textbox_width != 280
+{
+	var _txtb_x = textbox_x + text_x_offset[page];
+	txtb_spr_w = textbox_width;
+}
 txtb_spr_h = sprite_get_height(txtb_spr);
 // back of the textbox
 draw_sprite_ext(txtb_spr, txtb_img, _txtb_x, _txtb_y, textbox_width/txtb_spr_w, textbox_height/txtb_spr_h,0, c_white, 1);

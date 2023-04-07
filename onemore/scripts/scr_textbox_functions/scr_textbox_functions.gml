@@ -1,13 +1,14 @@
 /// @param text
-function scr_text(_text, _txt_speed = 1, _txtbackground = spr_textbox, _border = 6, _top = false, _width = 280)
+function scr_text(_text, _txt_speed = .5, _txtbackground = spr_textbox, _border = 6, _top = false, _width = 280)
 {
-	textbox_width = _width;
+	
 	border = _border;
 	text[page_number] = _text;
 	text_speed = _txt_speed;
 	txtb_spr = _txtbackground;
 	text_top = _top;
 	page_number ++;
+	line_width = _width;
 
 }
 

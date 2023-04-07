@@ -1,4 +1,4 @@
-if global.current_loop > 2
+if global.current_loop > 1
 {
 	instance_destroy();
 }

@@ -14,16 +14,19 @@ if global.time_left > 0.1 && global.time_left < 0.11
 */
 if global.time_left < 0
 	{
-
+		
+		global.current_loop += 1;
+		if global.current_loop > 0 
+		{
 		var bonus_room = int64(random_range(0,10));
 		if bonus_room < 11
 		{
+
+			room_goto(rm_sleep);
 			obj_player.x = 96;
 			obj_player.y = 576;
-			room_goto(rm_sleep);
 			global.time_left = int64(random_range(60, 70));
 			global.loopnumber += 1;
-			global.current_loop += 1;
 			global.newloop = 1;
 			audio_stop_all();
 		}
@@ -33,10 +36,9 @@ if global.time_left < 0
 			obj_player.y = 400;
 			room_goto(rm_bonus_1);
 			global.time_left = int64(random_range(5, 10));
-			global.loopnumber += 1;
-			global.current_loop += 1;
 			global.newloop = 1;
 			audio_stop_all();
+		}
 		}
 		
 		

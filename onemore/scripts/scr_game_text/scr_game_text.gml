@@ -6,11 +6,12 @@ function scr_game_text(_text_id){
 
 		
 	case "intro_text":
-		scr_text("a nice big dump of texta nice big dump of texta nice big dump of texta nice big dump of texta nice big dump of texta nice big dump of texta nice big dump of texta nice big dump of texta nice big dump of texta nice big dump of texta nice big dump of texta nice big dump of texta nice big dump of texta nice big dump of texta nice big dump of texta nice big dump of texta nice big dump of texta nice big dump of texta nice big dump of text", 1, spr_none,10,true,310);
+		scr_text("As we approach the end of 24XX, humanity has reached the stars. Through exciting new technology, the crew of XXX are able to travel outside the heliosphere to test the ability to create and destroy a new energy source - a blackhole. It was theorised Hawking radiation would provide limitless energy, and the opportunity to study a blackhole allows humanity to peak into the creative forces of the universe. ", .4, spr_none,10,true,310);
+		
 		break;
 		
 	case "response_creepy_1":
-		scr_text("I really hate this ", 1, spr_none);
+		scr_text("I really hate this ", 1, spr_eye);
 		break;
 	
 	case "response_creepy_2":
@@ -319,17 +320,17 @@ function scr_game_text(_text_id){
 	
 	
 	case "wake_up":
-		if global.current_loop == 2
+		if global.current_loop == 1
 		{
 			scr_text("Wow, that dream was just the worst!");
 			scr_text(".......");
 			scr_text("I should probably go start prepping everyones breakfast");
 		}
-		if global.current_loop == 3
+		if global.current_loop == 2
 		{
 			scr_text("Oh dear....");
 		}
-		if global.current_loop > 3
+		if global.current_loop > 2
 		{
 			scr_text("Here we go, round " + string(global.current_loop));
 		}	
