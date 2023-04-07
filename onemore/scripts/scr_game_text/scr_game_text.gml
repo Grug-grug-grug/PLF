@@ -2,6 +2,13 @@
 function scr_game_text(_text_id){
 	
 	switch(_text_id) {
+		
+
+		
+	case "intro_text":
+		scr_text("a nice big dump of texta nice big dump of texta nice big dump of texta nice big dump of texta nice big dump of texta nice big dump of texta nice big dump of texta nice big dump of texta nice big dump of texta nice big dump of texta nice big dump of texta nice big dump of texta nice big dump of texta nice big dump of texta nice big dump of texta nice big dump of texta nice big dump of texta nice big dump of texta nice big dump of text", 1, spr_none,10,true,310);
+		break;
+		
 	case "response_creepy_1":
 		scr_text("I really hate this ", 1, spr_none);
 		break;
@@ -13,19 +20,19 @@ function scr_game_text(_text_id){
 	
 	// test walkover text box
 	case "creepy_1":     
-		scr_text(" t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r ", 10  , spr_none);
+		scr_text(" t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r t h i s d o e s n o t m a t t e r ", 10  , spr_none ,2,true,320);
 		break;
 	
 	case "creepy_2":
-		scr_text("thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter ", 10, spr_none);
+		scr_text("thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter ", 10, spr_none,2,true,320);
 		break;
 	
 	case "creepy_3":
-		scr_text("thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter ", 10, spr_none, 0);
+		scr_text("thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter ", 10, spr_none, 4,true,320);
 		break;
 		
 	case "creepy_4":
-		scr_text("thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter ", 10, spr_none, 2);
+		scr_text("thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter thisdoesnotmatterthisdoesnotmatterthisdoesnotmatterthisdoesnotmatter ", 10, spr_none, 8,true,320);
 		global.time_left = 0.01;
 		break;
 		
@@ -214,13 +221,48 @@ function scr_game_text(_text_id){
 		
 	// Plants in BB
 	case "bb_computer":
-		scr_text("...starting...");
+		scr_text("...........");
 		scr_text("...........");
 		scr_text("...booting...");
 		scr_text("...........");
 		scr_text("...[ERROR - 10221]...");
 		scr_text("...[ERROR - 10221]...");
-		scr_text(" j u s t s t o p i t w h y a r e y o u b o t h e r i n g i t d o e s n o t m a t t e r ");
+		scr_text(".");
+		scr_text(".");
+		scr_text(".");
+		scr_text("");
+		scr_text("");
+		scr_text(" p o i n t l e s s n o t h i n g g i v e u p n o t h i n g n o t h i g ");
+		break;
+		
+	// Bookshelf next to computer
+	case "bb_bookshelf":
+	
+		scr_text("Anything here worth reading?");
+		scr_option("Error Handling 101", "bb_bs_1");
+		scr_option("The day in the life of Dog", "bb_bs_2");
+		scr_option("The key to success", "bb_bs_3");
+		scr_option("Naa", "bb_bs_4");
+		break;
+		
+	case "bb_bs_1":
+	
+		scr_text("A hundred pages of how to handle errors");
+		break;
+		
+	case "bb_bs_2":
+	
+		scr_text("Wake up, eat, play, sleep, repeat");
+		break;
+		
+	case "bb_bs_3":
+	
+		scr_text("Just be more good and less ungood");
+		break;
+		
+	case "bb_bs_4":
+	
+		scr_text("Books are for nerds");
 		break;
 		
 	// Plants in BB
@@ -255,7 +297,24 @@ function scr_game_text(_text_id){
 	case "bb_plant_4":
 		scr_text("Plant 4");
 		break;
-
+	
+	// Enter quarters for the first time
+	case "bb_enter_quarters":
+		scr_text("Uhhhhhhhhh.......");
+		scr_text(".......");
+		scr_text("Uhhhhhhhhh.......");
+		scr_text("....where is everyone?");
+		scr_text("And why is everything locked up?");
+		break;
+		
+	case "bb_near_door":
+		scr_text("Uhhhhhhhhh.......");
+		scr_text(".......");
+		scr_text("Uhhhhhhhhh.......");
+		scr_text("....why is my door locked?");
+		break;
+		
+		
 	// Wake up
 	
 	
@@ -263,6 +322,8 @@ function scr_game_text(_text_id){
 		if global.current_loop == 2
 		{
 			scr_text("Wow, that dream was just the worst!");
+			scr_text(".......");
+			scr_text("I should probably go start prepping everyones breakfast");
 		}
 		if global.current_loop == 3
 		{

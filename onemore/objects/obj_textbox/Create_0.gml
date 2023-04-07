@@ -1,7 +1,7 @@
 /// @desc Text box stuff
 
 text_box_font = global.newFont;
-
+text_top = global.text_centre;
 textbox_width = 280;
 textbox_height = 40;
 border = 6;
