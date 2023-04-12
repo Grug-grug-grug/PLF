@@ -64,22 +64,22 @@ last_dir = 4;
 
 
 // collison
-if place_meeting(x + xspd, y, obj_wall) == true
+if place_meeting(x + xspd, y, obj_solid) == true
 	{
 		xspd = 0;
 	}
 
-if place_meeting(x, y + yspd, obj_wall) == true
+if place_meeting(x, y + yspd, obj_solid) == true
 	{
 		yspd = 0;
 	}
 
-if place_meeting(x + xspd, y, obj_wall_light) == true
+if place_meeting(x + xspd, y, obj_solid) == true
 	{
 		xspd = 0;
 	}
 
-if place_meeting(x, y + yspd, obj_wall_light) == true
+if place_meeting(x, y + yspd, obj_solid) == true
 	{
 		yspd = 0;
 	}

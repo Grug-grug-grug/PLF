@@ -17,13 +17,19 @@ global.first_key = 0; // currently just a key on the floor
 global.puzzle_1 = 0; // nothing
 
 // Sleep room Puzzle variables
-
-global.key_bedroom = 0; // 
+global.bb_door_opened = false; // check if the first door is open
+global.key_bedroom = 0; //
+global.key_bedroom_top_left = 0; //
+global.key_bedroom_bottom_right = 0; //
+global.key_bedroom_top_right = 0; // 
+global.bottom_right_key = 0 ;// the key in the bottom right room for the top left room
 global.bb_note = 0; // turns to 1 when you get that note
 global.bb_door = 0; // turns to 1 when you first leave the bedroom
 global.safe_key = 0; //  key for the common room 
 global.safe_counter = 0; // safe counter for the common room key
 
+global.test1 = 0;
+global.test2 = 0;
 
 global.bed = 0;
 global.common_computer = 0;

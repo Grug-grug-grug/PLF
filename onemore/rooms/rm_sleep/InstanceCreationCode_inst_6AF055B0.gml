@@ -1,1 +1,1 @@
-text_id = "first_key";
+text_id = "key_bedroom_top_left";

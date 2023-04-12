@@ -187,6 +187,7 @@ function scr_game_text(_text_id){
 	case "bb_door_open":
 		scr_text("Got it!");
 		global.bb_door = 4;
+		global.bb_door_opened = true;
 		break;
 
 	
@@ -314,7 +315,11 @@ function scr_game_text(_text_id){
 		scr_text("Uhhhhhhhhh.......");
 		scr_text("....why is my door locked?");
 		break;
-		
+	
+	// bb keys
+	// key in bottom right room for top left room
+	case "key_bedroom_top_left":
+		scr_text("Well, this was low effort. The key was right here.....");
 		
 	// Wake up
 	

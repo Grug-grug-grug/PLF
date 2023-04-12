@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_wall_light",
+  "name": "obj_bb_top_left",
   "spriteId": {
-    "name": "spr_wall_light",
-    "path": "sprites/spr_wall_light/spr_wall_light.yy",
+    "name": "spr_darkness",
+    "path": "sprites/spr_darkness/spr_darkness.yy",
   },
   "solid": true,
   "visible": true,
@@ -28,12 +28,12 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "bb_destruction",
+    "path": "folders/Objects/bb_destruction.yy",
   },
 }

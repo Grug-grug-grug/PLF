@@ -1,4 +1,1 @@
-if global.key_bedroom 
-{
-	instance_destroy(instance_id);
-}
+destruct_variable = global.bb_door_opened ;
