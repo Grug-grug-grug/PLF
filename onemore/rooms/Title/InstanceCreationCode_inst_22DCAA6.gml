@@ -1,1 +1,1 @@
-target_rm = rm_first_room;
+target_rm = rm_intro_game;

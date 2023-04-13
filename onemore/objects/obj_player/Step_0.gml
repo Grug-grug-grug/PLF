@@ -17,19 +17,17 @@ var yspd = (down_key - up_key) * move_spd;
 
 
 
-if room == rm_first_room
+if room == rm_first_room or room == rm_actual_first
 {
 spinny =  true;
+image_angle += 1;
 }
-if room != rm_first_room
+if room != rm_first_room and room != rm_actual_first
 {
 	spinny = false;
 	image_angle = 0;
 }
-if spinny == true
-{
-	image_angle += 1;
-}
+
 // animation
 
 if up_key //

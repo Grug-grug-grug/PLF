@@ -3,7 +3,13 @@ function scr_game_text(_text_id){
 	
 	switch(_text_id) {
 		
-
+	case "pre_game_txt":
+		scr_text("Uh dear");
+		scr_text("Uh dear1");
+		scr_text("Uh dea2r");
+		global.intro_txt_done = 1;
+		scr_text("Uh go");
+		break;
 		
 	case "intro_text":
 		scr_text("As we approach the end of 24XX, humanity has reached the stars. Through exciting new technology, the crew of XXX are able to travel outside the heliosphere to test the ability to create and destroy a new energy source - a blackhole. It was theorised Hawking radiation would provide limitless energy, and the opportunity to study a blackhole allows humanity to peak into the creative forces of the universe. ", .4, spr_none,10,true,310, global.newFontBoss);

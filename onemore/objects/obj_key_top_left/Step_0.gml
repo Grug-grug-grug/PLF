@@ -7,7 +7,7 @@ global.chat_active = 0;
 global.game_pause = true;
 create_textbox(text_id)
 global.key_bedroom_top_left = 1;
-instance_destroy(obj_key1);
+instance_destroy(obj_key_top_left);
 global.chat_active = 0;
 }
 
@@ -16,5 +16,5 @@ global.chat_active = 0;
 
 if global.key_bedroom_top_left == 1
 	{
-		instance_destroy(obj_key1);
+		instance_destroy(obj_key_top_left);
 	}

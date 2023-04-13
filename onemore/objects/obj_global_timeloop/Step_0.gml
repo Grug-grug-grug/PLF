@@ -30,7 +30,7 @@ if global.time_left < 0
 					room_goto(rm_sleep);
 					obj_player.x = 96;
 					obj_player.y = 576;
-					global.time_left = int64(random_range(10, 15));
+					global.time_left = int64(random_range(60, 75));
 					global.loopnumber += 1;
 					global.current_loop += 1;
 					global.newloop = 1;
@@ -43,7 +43,6 @@ if global.time_left < 0
 					obj_player.y = 352;
 					global.time_left = int64(random_range(1, 1.2));
 					global.loopnumber += 1;      
-					 
 					global.newloop = 1;
 					audio_stop_all();
 				}

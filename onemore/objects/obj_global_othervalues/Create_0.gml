@@ -2,9 +2,11 @@
 randomize();
 global.newFont = font_add("blocks-extended.ttf",7,true,false,32,128);
 global.newFontBoss = font_add("blocks-extended.ttf",7,true,true,32,128);
+global.newFontLarge = font_add("blocks-extended.ttf",24,true,true,32,128);
 global.first_digit = 1 ;
 global.startupRoomTransition = "";
 global.newloop = 1;
+global.intro_txt_done = 0;
 
 global.text_speed = 0.75;
 global.game_pause = false;

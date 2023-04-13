@@ -1,0 +1,1 @@
+text_id = "key_bedroom_top_left";
