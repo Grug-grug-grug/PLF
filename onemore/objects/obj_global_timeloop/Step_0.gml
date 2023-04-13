@@ -15,6 +15,8 @@ if global.first_key == 1 and global.safe_key == 1
 	global.boss_01 = true;	
 }
 
+
+
 if global.time_left < 0
 	{
 		
@@ -30,10 +32,13 @@ if global.time_left < 0
 					room_goto(rm_sleep);
 					obj_player.x = 96;
 					obj_player.y = 576;
-					global.time_left = int64(random_range(60, 75));
+					global.time_left = int64(random_range(3, 5));
 					global.loopnumber += 1;
 					global.current_loop += 1;
 					global.newloop = 1;
+					
+					global.bb_door = 0;
+					global.bb_door_opened = false;
 					audio_stop_all();
 				}
 			if global.boss_01_outcome == 0 and global.boss_01 == true

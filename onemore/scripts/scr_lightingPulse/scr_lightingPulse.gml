@@ -10,11 +10,11 @@ if int64(_time_left / 10) mod 2 == 0
 	light[| eLight.Color] =  _colour;
 	if _updown == "UP"
 		{
-			light[| eLight.Intensity] = _time_left mod 10/10 * 3 + 1.5 ;
+			light[| eLight.Intensity] = _time_left mod 10/10 * 3 + 2.5 ;
 		}
 	if _updown == "DOWN"
 		{
-		light[| eLight.Intensity] = (1-(_time_left mod 10)/10) * 3 + 1.5  ;
+		light[| eLight.Intensity] = (1-(_time_left mod 10)/10) * 3 + 2.5  ;
 		}
 	}
 if int64(_time_left / 10) mod 2 != 0
@@ -23,11 +23,11 @@ if int64(_time_left / 10) mod 2 != 0
 	light[| eLight.Color] =  _colour;
 	if _updown == "UP"
 	{
-	light[| eLight.Intensity] = (1-(_time_left mod 10)/10) * 3 + 1.5 ;
+	light[| eLight.Intensity] = (1-(_time_left mod 10)/10) * 3 + 2.5 ;
 	}
 	if _updown == "DOWN"
 	{
-	light[| eLight.Intensity] = _time_left mod 10/10 * 3 + 1.5 ;
+	light[| eLight.Intensity] = _time_left mod 10/10 * 3 + 2.5 ;
 	}
 	}
 

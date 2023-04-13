@@ -157,13 +157,20 @@ function scr_game_text(_text_id){
 			scr_text("Already open my dude");
 			break;
 		}
-		if global.bb_door == 0
+		if global.bb_door == 0 and global.current_loop < 4
 		{
 		scr_text("Lets do this thang");
 			scr_option("1", "bb_incorrect");
 			scr_option("2", "1st_b_correct");
 			scr_option("3", "bb_incorrect");
 		break;
+		}
+		if global.current_loop > 3
+		{
+			scr_text("Same!");
+			global.bb_door = 4;
+			global.bb_door_opened = true;
+			break;
 		}
 		
 	case "1st_b_correct":
@@ -191,7 +198,7 @@ function scr_game_text(_text_id){
 		break;	
 		
 	case "bb_door_open":
-		scr_text("Got it!");
+		scr_text("Open!");
 		global.bb_door = 4;
 		global.bb_door_opened = true;
 		break;
@@ -316,10 +323,21 @@ function scr_game_text(_text_id){
 		break;
 		
 	case "bb_near_door":
+		if global.current_loop == 1
+		{
 		scr_text("Uhhhhhhhhh.......");
 		scr_text(".......");
 		scr_text("Uhhhhhhhhh.......");
 		scr_text("....why is my door locked?");
+		}
+		if global.current_loop == 2
+		{
+		scr_text("...So is it the same combo...?");
+		}
+		if global.current_loop == 3
+		{
+		scr_text("I'm going assume it's always the same...");
+		}
 		break;
 	
 	// bb keys
