@@ -18,7 +18,7 @@ function TransitionStart(_roomTarget, _typeOut, _typeIn)
 		TransitionPlaceSequence(_typeOut);
 		layer_set_target_room(_roomTarget);
 		TransitionPlaceSequence(_typeIn);
-		
+
 		layer_reset_target_room();
 		return true;
 	}
@@ -30,10 +30,31 @@ function TransitionChangeRoom()
 	room_goto(global.startupRoomTransition);
 }
 
+
+
 function TransitionFinished()
 {
 	layer_sequence_destroy(self.elementID);
 	global.midTransition = false;
+	global.game_pause = false;
+}
+
+function TranGame()
+{
+	layer_sequence_destroy(self.elementID);
+	global.midTransition = false;
+	global.game_pause = false;
+	create_textbox("wake_up");
+}
+
+
+function movePlayer()
+{
+	if global.new_x_position != 0
+	{
+	obj_player.x = global.new_x_position;
+	obj_player.y = global.new_y_position;
+	}
 }
 
 function TransitionStartGame(_roomTarget, _typeOut)

@@ -1,4 +1,4 @@
-if global.current_loop > 1
+if global.current_loop > 2 and	global.bb_door_opened_once == true
 {
 	instance_destroy();
 }

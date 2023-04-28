@@ -5,10 +5,10 @@ function scr_game_text(_text_id){
 		
 	case "pre_game_txt":
 		scr_text("Uh dear");
-		scr_text("Uh dear1");
-		scr_text("Uh dea2r");
-		global.intro_txt_done = 1;
-		scr_text("Uh go");
+		scr_text("uh no");
+		scr_text("uh no2");
+
+		
 		break;
 		
 	case "intro_text":
@@ -165,7 +165,7 @@ function scr_game_text(_text_id){
 			scr_option("3", "bb_incorrect");
 		break;
 		}
-		if global.current_loop > 3
+		if global.current_loop > 3 and global.bb_door_opened_once == true
 		{
 			scr_text("Same!");
 			global.bb_door = 4;
@@ -201,6 +201,7 @@ function scr_game_text(_text_id){
 		scr_text("Open!");
 		global.bb_door = 4;
 		global.bb_door_opened = true;
+		global.bb_door_opened_once = true;
 		break;
 
 	
@@ -315,12 +316,24 @@ function scr_game_text(_text_id){
 	
 	// Enter quarters for the first time
 	case "bb_enter_quarters":
+		if global.current_loop == 1
+		{
 		scr_text("Uhhhhhhhhh.......");
 		scr_text(".......");
 		scr_text("Uhhhhhhhhh.......");
 		scr_text("....where is everyone?");
 		scr_text("And why is everything locked up?");
 		break;
+		}
+		if global.current_loop == 2
+		{
+		scr_text("Uhhhhhhhhh.......");
+		scr_text(".......");
+		scr_text("Uhhhhhhhhh.......");
+		scr_text("....so I have to do it all again?");
+		scr_text(".....");
+		break;
+		}
 		
 	case "bb_near_door":
 		if global.current_loop == 1
@@ -351,9 +364,9 @@ function scr_game_text(_text_id){
 	case "wake_up":
 		if global.current_loop == 1
 		{
-			scr_text("Wow, that dream was just the worst!");
+			scr_text("....what was that?");
 			scr_text(".......");
-			scr_text("I should probably go start prepping everyones breakfast");
+			scr_text(".......I need a drink.....");
 		}
 		if global.boss_01_outcome =! 0 and global.boss_01_outcome_wakeup == 0
 		{
@@ -494,20 +507,80 @@ function scr_game_text(_text_id){
 	
 	// Sleeping Room
 	
+	// bar
+	
+	case "bar":
+		if global.bar_counter == 0
+		{
+			scr_text("Perfect, a drink will settle my nerves");
+				scr_option("Drink it down","bar_drink");
+				scr_option("Not now....","bar_no_drink");
+			break;
+		}
+		if global.bar_counter > 0 
+		{
+			scr_text("Another?");
+				scr_option("Drink it down","bar_drink");
+				scr_option("Not now....","bar_no_drink");
+			break;
+		}
+			
+	case "bar_no_drink":
+		scr_text("Naaaaa");
+		break;
+		
+	case "bar_drink":
+		if global.bar_counter == 0
+		{
+			scr_text("There we go...");
+			global.bar_counter += 1;
+			break;
+		}
+		if global.bar_counter == 1
+		{
+			scr_text("Oh that is nice!");
+			global.bar_counter += 1;
+			break;
+		}
+		if global.bar_counter == 2
+		{
+			scr_text("Another won't hurt");
+			global.bar_counter += 1;
+			break;
+		}
+		if global.bar_counter == 3
+		{
+			scr_text(".......");
+			global.bar_counter += 1;
+			break;
+		}
+		if global.bar_counter == 4
+		{
+			scr_text(".......");
+			global.bar_counter += 1;
+			break;
+		}
+		if global.bar_counter == 5
+		{
+			scr_text(".......!");
+			global.time_left = 1;
+			break;
+		}
+		
 	// Puzzle 1
 	
 	// Input 1
 	case "input_1":
 		if global.puzzle_1 == 0
 		{
-			scr_text("yep.")
+			scr_text("yepeee.")
 			global.puzzle_1 = 1;
 			break;
 		}
 		
 		if global.puzzle_1 > 0
 		{
-			scr_text("nope.");
+			scr_text("nopeee.");
 			global.puzzle_1 = 0;
 			break;
 		}
@@ -516,12 +589,12 @@ function scr_game_text(_text_id){
 	case "input_2":
 		if global.puzzle_1 == 0
 		{
-			scr_text("nope.");
+			scr_text("no11pe.");
 			global.puzzle_1 = 0;
 		}
 		if global.puzzle_1 > 0
 		{
-			scr_text("yep.")
+			scr_text("ye22p.")
 			global.puzzle_1 = 2;
 		}
 		break;

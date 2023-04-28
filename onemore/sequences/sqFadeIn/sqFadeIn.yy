@@ -17,7 +17,10 @@
   },
   "moments": {
     "Keyframes": [
-      {"id":"eeedaffb-2334-4016-93b4-dce3a2c8f30b","Key":100.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Events":[
+      {"id":"817f1a4c-900c-4fa6-8e02-c034f7d3403d","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Events":[
+              "movePlayer",
+            ],"resourceVersion":"1.0","resourceType":"MomentsEventKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<MomentsEventKeyframe>",},
+      {"id":"f6c8d57d-2fc7-44a2-93b6-10ae7895e315","Key":100.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Events":[
               "TransitionFinished",
             ],"resourceVersion":"1.0","resourceType":"MomentsEventKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<MomentsEventKeyframe>",},
     ],
@@ -59,7 +62,10 @@
   "xorigin": -95,
   "yorigin": -79,
   "eventToFunction": {},
-  "eventStubScript": null,
+  "eventStubScript": {
+    "name": "sqFadeIn_Events50",
+    "path": "scripts/sqFadeIn_Events50/sqFadeIn_Events50.yy",
+  },
   "parent": {
     "name": "Sequences",
     "path": "folders/Sequences.yy",

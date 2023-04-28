@@ -1,9 +1,9 @@
 /// @desc ???
 
 
-if global.intro_txt_done == 1
+if global.game_pause == false
 {
-	TransitionStart(rm_actual_first, sqFadeOut, sqFadeIn);
+		TransitionStart(rm_actual_first, sqFadeOut, sqFadeIn);
 }
 
 

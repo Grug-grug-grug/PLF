@@ -8,6 +8,9 @@ global.startupRoomTransition = "";
 global.newloop = 1;
 global.intro_txt_done = 0;
 
+global.new_x_position = 0;
+global.new_y_position = 0;
+
 global.text_speed = 0.75;
 global.game_pause = false;
 global.chat_active = 0;
@@ -20,6 +23,7 @@ global.puzzle_1 = 0; // nothing
 
 // Sleep room Puzzle variables
 global.bb_door_opened = false; // check if the first door is open
+global.bb_door_opened_once = false; // check if the first door has ever been opened
 global.key_bedroom = 0; //
 global.key_bedroom_top_left = 0; //
 global.key_bedroom_bottom_right = 0; //
@@ -29,7 +33,7 @@ global.bb_note = 0; // turns to 1 when you get that note
 global.bb_door = 0; // turns to 1 when you first leave the bedroom
 global.safe_key = 0; //  key for the common room 
 global.safe_counter = 0; // safe counter for the common room key
-
+global.bar_counter = 0; // how many drinks this round
 global.test1 = 0;
 global.test2 = 0;
 
