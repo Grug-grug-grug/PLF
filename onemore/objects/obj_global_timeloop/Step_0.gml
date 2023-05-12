@@ -18,11 +18,7 @@ if global.first_key == 1 and global.safe_key == 1
 
 
 if global.time_left < 0
-	{
-		
-		
-		
-		
+	{	
 			{
 			var bonus_room = int64(random_range(0,10));
 			if global.current_loop < 4

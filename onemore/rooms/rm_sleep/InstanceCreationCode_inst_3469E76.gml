@@ -1,0 +1,1 @@
+text_id = "note_bottom_right";

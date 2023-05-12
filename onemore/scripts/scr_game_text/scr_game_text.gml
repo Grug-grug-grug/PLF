@@ -357,8 +357,15 @@ function scr_game_text(_text_id){
 	// key in bottom right room for top left room
 	case "key_bedroom_top_left":
 		scr_text("Well, this was low effort. The key was right here.....");
-		
+		break;
 	// Wake up
+	
+	// bb note near bottom right room
+	case "note_bottom_right":
+		scr_text("** I cant do this anymore **");
+		scr_text("** I'm going to find somewhere nice to sit and drink this away **");
+		scr_text("I like this approach");
+		break;
 	
 	
 	case "wake_up":
@@ -380,11 +387,11 @@ function scr_game_text(_text_id){
 		}
 		if global.current_loop == 2
 		{
-			scr_text("Oh dear....");
+			scr_text("....what did we do....");
 		}
 		if global.current_loop > 2
 		{
-			scr_text("Here we go, round " + string(global.current_loop));
+			scr_text("Keeping count now, this will be round " + string(global.current_loop));
 		}	
 		break;
 	
