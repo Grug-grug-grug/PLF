@@ -3,7 +3,11 @@
 
 if global.game_pause == false
 {
-		TransitionStart(rm_actual_first, sqFadeOut, sqFadeIn);
+		room_goto(rm_sleep);
+					obj_player.x = 96;
+					obj_player.y = 576;
+		instance_destroy();
+		
 }
 
 

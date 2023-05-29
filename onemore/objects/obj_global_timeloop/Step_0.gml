@@ -16,21 +16,33 @@ if global.first_key == 1 and global.safe_key == 1
 }
 
 
+if global.time_left > -5 and global.time_left < 10
+{
+	global.final_10 = true;	
+}
+else
+{
+	global.final_10 = false;
+}
 
 if global.time_left < 0
-	{	
-			{
-			var bonus_room = int64(random_range(0,10));
+	{		
+			bonus_room = int64(random_range(0,10));
 			if global.current_loop < 4
 			{
 				bonus_room = 3;
 			}			
 			global.bonus_room_var = bonus_room;
-			if bonus_room < 7
+			if bonus_room < 7 and global.final_10 == true
 				{
 					global.new_x_position = 96;
 					global.new_y_position = 576;
-					TransitionStart(rm_sleep, sqFadeOut_white, sqFadeIn_white);
+					room_goto(rm_sleep);
+					obj_player.x = 96;
+					obj_player.y = 576;
+					//TransitionStart(rm_sleep, sqFadeOut_white, sqFadeIn_white);
+					
+					
 					
 					global.time_left = int64(random_range(80, 120));
 					global.loopnumber += 1;
@@ -43,6 +55,7 @@ if global.time_left < 0
 					
 					audio_stop_all();
 				}
+				/*
 			if global.boss_01_outcome == 0 and global.boss_01 == true
 				{
 					room_goto(rm_boss_01);
@@ -63,10 +76,6 @@ if global.time_left < 0
 					global.newloop = 1;
 					audio_stop_all();
 				}
-	
-			}      
-		
-		
-		
+			*/
 	}
 

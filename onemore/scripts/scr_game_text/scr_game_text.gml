@@ -531,6 +531,7 @@ function scr_game_text(_text_id){
 				scr_option("Not now....","bar_no_drink");
 			break;
 		}
+		break;
 			
 	case "bar_no_drink":
 		scr_text("Naaaaa");
@@ -573,6 +574,7 @@ function scr_game_text(_text_id){
 			global.time_left = 1;
 			break;
 		}
+		break;
 		
 	// Puzzle 1
 	

@@ -18,7 +18,7 @@ function TransitionStart(_roomTarget, _typeOut, _typeIn)
 		TransitionPlaceSequence(_typeOut);
 		layer_set_target_room(_roomTarget);
 		TransitionPlaceSequence(_typeIn);
-
+		instance_activate_all();
 		layer_reset_target_room();
 		return true;
 	}
@@ -56,7 +56,7 @@ function movePlayer()
 	obj_player.y = global.new_y_position;
 	}
 }
-
+/*
 function TransitionStartGame(_roomTarget, _typeOut)
 {
 	if (!global.midTransition)
@@ -71,4 +71,4 @@ function TransitionStartGame(_roomTarget, _typeOut)
 		return true;
 	}
 	else return false;
-}
+}*/
