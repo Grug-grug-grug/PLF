@@ -4,15 +4,15 @@ function scr_game_text(_text_id){
 	switch(_text_id) {
 		
 	case "pre_game_txt":
-		scr_text("Uh dear");
-		scr_text("uh no");
-		scr_text("uh no2");
-
+		scr_text("....");
+		scr_text("...everything is fine...");
+		scr_text(".....");
+		scr_text("...I don't feel so good..");
 		
 		break;
 		
 	case "intro_text":
-		scr_text("As we approach the end of 24XX, humanity has reached the stars. Through exciting new technology, the crew of XXX are able to travel outside the heliosphere to test the ability to create and destroy a new energy source - a blackhole. It was theorised Hawking radiation would provide limitless energy, and the opportunity to study a blackhole allows humanity to peak into the creative forces of the universe. ", .4, spr_none,10,true,310, global.newFontBoss);
+		scr_text("After years travelling, the crew are ready to finish their research. ", .4, spr_none,10,true,310, global.newFontBoss);
 		
 		break;
 		
@@ -371,7 +371,7 @@ function scr_game_text(_text_id){
 	case "wake_up":
 		if global.current_loop == 1
 		{
-			scr_text("....what was that?");
+			scr_text("...how did I end up back in my room...?");
 			scr_text(".......");
 			scr_text(".......I need a drink.....");
 		}
@@ -387,7 +387,7 @@ function scr_game_text(_text_id){
 		}
 		if global.current_loop == 2
 		{
-			scr_text("....what did we do....");
+			scr_text("....definitely need another drink....");
 		}
 		if global.current_loop > 2
 		{

@@ -1,7 +1,7 @@
 /// @desc ???
 time_left = int64(global.time_left);
 
-first_digit = time_left / 10;
+first_digit = int64(time_left / 10);
 
 if time_left > 10
 {
