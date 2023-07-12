@@ -1,14 +1,14 @@
 {
-	var CAMERA_PAN_SPEED = 20;
+	var CAMERA_PAN_SPEED = 10;
 	var camera = view_get_camera(0);
 	
 	var desired_x = obj_player.x /320;
 	desired_x -= frac(desired_x);
 	desired_x *= 320;
 		
-	var desired_y = obj_player.y /224;
+	var desired_y = obj_player.y /180;
 	desired_y -= frac(desired_y);
-	desired_y *= 224;
+	desired_y *= 180;
 	
 	//camera_set_view_pos(camera, desired_x, desired_y);
 	

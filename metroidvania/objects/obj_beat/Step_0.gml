@@ -1,4 +1,4 @@
-
+/*
 var background = layer_background_get_id (layer_get_id ("Background_beat"));
 if global.time_left > 12 and global.time_left < 24
 {
@@ -18,3 +18,4 @@ else
 
 	layer_background_alpha(background, 0);
 } 
+*/
