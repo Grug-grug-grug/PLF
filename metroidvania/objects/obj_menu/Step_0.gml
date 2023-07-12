@@ -9,13 +9,18 @@ accept_key = keyboard_check_pressed(vk_space);
 op_length = array_length(option[menu_level]);
 
 // move through menu
+pos_move = 0;
 pos += down_key - up_key;
+pos_move = down_key - up_key;
+if pos_move != 0 {audio_play_sound(Change,1,0)};
+
 if pos >= op_length {pos = 0};
 if pos < 0 {pos = op_length - 1};
 
 /// Using the options
 if accept_key
 {
+	audio_play_sound(Decide,1,0);
 	switch(menu_level)
 	{
 		// first level

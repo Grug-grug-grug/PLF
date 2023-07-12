@@ -12,3 +12,4 @@ global.doublebeat = false;
 global.beatCount = 8;
 global.test2 = 0;
 global.ledgegrab = false;
+global.doublebeat_enable = false;

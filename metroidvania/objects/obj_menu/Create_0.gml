@@ -7,6 +7,7 @@ op_border = 6;
 op_space = 16;
 
 pos = 0;
+pos_move = 0;
 
 //Start
 option[0, 0] = "Start Game";

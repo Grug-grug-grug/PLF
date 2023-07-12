@@ -26,24 +26,6 @@ StateFree = function()
 		thrustjump = 1;
 	}
 	
-	if keyboard_check_pressed(vk_left)
-	{
-		image_xscale = image_xscale * -1;
-	}
-	if keyboard_check_pressed(vk_right)
-	{
-		image_xscale = image_xscale *-1;
-	}
-	if keyboard_check_pressed(vk_down)
-	{
-		image_yscale = image_yscale / 2;
-	}
-	else if keyboard_check_released(vk_down)
-	{
-		image_yscale = image_yscale * 2;
-	}
-	
-	 
 	
 	// Calculate movement
 	var _move = key_right - key_left;
@@ -203,6 +185,7 @@ StateLedge = function()
 		doublejumpsp = 1;
 		state = StateFree;
 	}
+	if keyboard_check_pressed(vk_down) {state = StateFree};
 }
 
 
