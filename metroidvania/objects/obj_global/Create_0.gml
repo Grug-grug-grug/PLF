@@ -15,6 +15,7 @@ global.doublebeat_enable = false;
 global.success_jumps = 0;
 global.jumpheight = 0;
 global.jump_timer = 0;
+global.jump_on_2 = false;
 global.jump_failed = 0;
 global.newFontLarge = font_add("blocks-extended.ttf",12,true,true,32,128);
 draw_set_font(global.newFontLarge);

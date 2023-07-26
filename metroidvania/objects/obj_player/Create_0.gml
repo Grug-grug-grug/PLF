@@ -6,7 +6,7 @@ hsp = 0;
 phsp = 0;
 vsp = 0;
 grv = 1.3;
-walksp = 5; //3
+walksp = 8; //3
 jumpsp = 10; //5
 doublejumpsp = 7;
 thrustjump = 0;
@@ -47,7 +47,7 @@ StateFree = function()
 	if _move == 0 {
 		hsp = hsp * .9;
 	} else {
-		hsp = phsp + _move *.3 ;
+		hsp = phsp + _move *.9 ;
 	}
 
 	if keyboard_check_released(vk_space) and vsp < 0
@@ -59,18 +59,20 @@ StateFree = function()
 	
 	if (!place_meeting(x,y+1,obj_wall)) && (doublejumpsp == 1) && keyboard_check_pressed(vk_space)    
 	{
-		vsp = -jumpsp;
+		if global.jump_on_2 && global.success_jumps > 1
+		{
+			vsp = -jumpsp*2;
+		}
+		else
+		{
+			vsp = -jumpsp;
+		}
 		doublejumpsp -= 1;
 		if onGround == true {global.success_jumps += 1};
 	} 
 	
 	
-	if (place_meeting(x,y+1,obj_wall)) && (key_jump) && key_jump != 0 
-	{
-		vsp = -jumpsp;
-		global.success_jumps += 1;
-		//audio_play_sound(bass,1,false,1,.06);
-	} 
+	
 	
 	
 	if vsp != grv
@@ -153,19 +155,25 @@ StateFree = function()
 		vsp = 0;
 	}
 	
-	if global.groundpound and keyboard_check(vk_down) and key_jump and (!place_meeting(x,y+sign(vsp),obj_wall))
-	{
-		vsp = 50;
-	}
-	global.test3 = key_jump;
+	
 	if onGround && key_jump > 0
 	{
-		vsp = -jumpsp;
+		global.success_jumps +=  1;
+		if global.jump_on_2 && global.success_jumps > 1
+		{
+			vsp = -jumpsp*1.5;
+		}
+		else
+		{
+			vsp = -jumpsp;
+		}
+		
 	}
 	else if onGround && vsp == grv
 	{
 		vsp = 0;
 	}
+	
 	y = y + vsp;
 	
 	

@@ -1,23 +1,25 @@
 /// @desc ???
 
-if !global.jump { sprite_index = noone};
+if !global.jump { image_alpha =0};
 else if global.time_left > 12 and global.time_left < 24
 {
-	
-	sprite_index = spr_sign_instruction;
-	mask_index = spr_sign_instruction;
+	image_alpha = 1;
+	//sprite_index = spr_sign_instruction;
+	mask_index = noone;
 
 }
 else if global.time_left < 30 and global.time_left > 23
 {
-	
-	sprite_index = noone;
+	image_alpha =0;
+	//sprite_index = noone;
 	mask_index = noone;
 	
 }
 else if global.time_left > 6 and global.time_left < 13
 {
-	sprite_index = noone;
+	image_alpha = 0;
+	//draw_set_alpha(0);
+	//sprite_index = noone;
 	mask_index = noone;
 }
 
