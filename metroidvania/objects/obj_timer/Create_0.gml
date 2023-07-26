@@ -1,6 +1,9 @@
 /// @desc ???
 randomize();
-time = room_speed; // 60 fps by default
+//time = room_speed; // 60 fps by default
+//time = 60;
+//time_countdown = 60;
+
 music_track = int64(random_range(1,10));
 
 // Song bpm is half of the bpm

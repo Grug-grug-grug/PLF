@@ -15,19 +15,33 @@ if (global.Paused == true){
 	{
 		key_jump = keyboard_check_pressed(vk_space);
 		key_thrust = keyboard_check_pressed(vk_shift);
+		
 	}
 	else
 	{
 		key_jump = 0;
 		key_thrust = 0;
+		if keyboard_check_pressed(vk_space) && key_jump == 0 && doublejumpsp == 0 || keyboard_check_pressed(vk_space) && key_jump == 0 && onGround == true
+		{
+			
+			global.success_jumps = 0; 
+			global.jump_failed = 15;
+			global.jump_timer = 20;
+		}
 	}
 
-	// if you have double jump power up and you are on the ground
-	// recharge double jump powerup
+	if (place_meeting(x,y+1,obj_jumpthoughplatform)) && keyboard_check_pressed(vk_space) && keyboard_check(vk_down)
+	{
+		y = y + 1
+		
+	} 	
 	
 	state();
 	
 	// Background scrolling
+	
+	layer_x("kb_city", x * -0.2); 
+	
 	layer_x("BG3", x * -0.1); 
 	layer_x("BG4", x * -.05); 
 	layer_y("BG3", y * -0.03);

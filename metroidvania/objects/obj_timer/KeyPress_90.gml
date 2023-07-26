@@ -1,3 +1,5 @@
+
+
 /// @desc ???
 audio_stop_all();
 music_track = int64(random_range(1,10));
@@ -17,10 +19,9 @@ switch(music_track)
 
 }
 
+
 bpm = int64(3600/song_bpm); // 3600 seconds / 50% of the BPM
 doublebpm = bpm / 2;
 doublebpm_counter = 0;
 global.no_beat = bpm;
 global.time_left = bpm;
-
-
