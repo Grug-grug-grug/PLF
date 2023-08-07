@@ -29,8 +29,8 @@
   "properties": [],
   "solid": true,
   "spriteId": {
-    "name": "spr_doublejump",
-    "path": "sprites/spr_doublejump/spr_doublejump.yy",
+    "name": "spr_note",
+    "path": "sprites/spr_note/spr_note.yy",
   },
   "spriteMaskId": null,
   "visible": true,

@@ -1,4 +1,4 @@
 
 target_rm = rm_city;
-target_x = 3220;
-target_y = 350;
+target_x = 650;
+target_y = 62;

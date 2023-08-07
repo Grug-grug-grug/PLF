@@ -1,4 +1,4 @@
 
-target_rm = rm_hub;
-target_x = 580;
-target_y = 320;
+	target_rm = rm_hub;
+	target_x = 50;
+	target_y = 130;

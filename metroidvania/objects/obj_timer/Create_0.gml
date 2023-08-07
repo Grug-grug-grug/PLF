@@ -7,6 +7,7 @@ randomize();
 music_track = int64(random_range(1,10));
 
 // Song bpm is half of the bpm
+/*
 switch(music_track)
 {
 	case 1:	audio_play_sound(track_1,1,	true,.5,1.2); song_bpm = 40; break;
@@ -19,8 +20,8 @@ switch(music_track)
 	case 8: audio_play_sound(IBP_Linee_Aeree_Gabagool,1,	true,.5,0.5); song_bpm = 40; break;
 	case 9: audio_play_sound(IBP_The_Cheese_Bleus,1,	true,.5,0.6); song_bpm = 40; break;
 
-}
-
+}*/
+song_bpm = 60;
 bpm = int64(3600/song_bpm); // 3600 seconds / 50% of the BPM
 doublebpm = bpm / 2;
 doublebpm_counter = 0;

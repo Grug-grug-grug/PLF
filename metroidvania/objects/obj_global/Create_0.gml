@@ -1,6 +1,6 @@
 /// @desc ???
 global.test = 0;
-game_set_speed(30, gamespeed_fps);
+game_set_speed(60, gamespeed_fps);
 global.Paused = false;
 global.double_jump = false;
 global.double_speed = false;
@@ -20,3 +20,6 @@ global.jump_failed = 0;
 global.newFontLarge = font_add("blocks-extended.ttf",12,true,true,32,128);
 draw_set_font(global.newFontLarge);
 global.speedrun_timer = 0;
+
+
+global.collectable = 0;
