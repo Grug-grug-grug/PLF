@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "HubRoom",
-    "path": "folders/Sprites/HubRoom.yy",
+    "path": "folders/Sprites/background/HubRoom.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

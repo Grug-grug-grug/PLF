@@ -1,0 +1,1 @@
+objname = obj_slope_switch;

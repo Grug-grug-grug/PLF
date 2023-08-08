@@ -13,6 +13,6 @@ if (bg_fade)
 	} 
 }	
 
-global.test = obj_player.x;
+//global.test = obj_player.x;
 layer_x("BG3", obj_player.x * -.5); 
 layer_x("BG4", obj_player.x * -.15); 

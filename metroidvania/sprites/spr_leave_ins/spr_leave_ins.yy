@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "HubRoom",
-    "path": "folders/Sprites/HubRoom.yy",
+    "name": "Instructions",
+    "path": "folders/Sprites/Instructions.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

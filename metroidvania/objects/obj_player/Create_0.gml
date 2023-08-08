@@ -11,6 +11,7 @@ jumpsp = 1; //5
 doublejumpsp = 7;
 thrustjump = 0;
 onGround=true;
+onLadder = false;
 xSubPixel = 0;
 ySubPixel = 0;
 

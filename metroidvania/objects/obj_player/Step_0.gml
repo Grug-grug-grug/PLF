@@ -40,9 +40,6 @@ if (global.Paused == true){
 		
 	} 	
 	
-	
-	
-		
 	layer_x("kb_city", x * -0.2); 
 	layer_x("Foreground_top", x * -0.4); 
 	layer_x("BG2", x * -.4); 
@@ -61,119 +58,154 @@ if (global.Paused == true){
 	}
 	else {jumpsp = 0};
 	
-	// Calculate movement
-	var _move = key_right - key_left;
-
-	if vsp > 4
+	if place_meeting(x,y,obj_ladder) and onLadder
 	{
-		vsp = 4;
+		
+		//x = obj_ladder.x + 4;
+		var _hmove = key_right - key_left;
+		if !place_meeting(x+1,y,obj_wall) || !place_meeting(x-1,y,obj_wall)  x += _hmove * .5;
+		var _vmove =  - keyboard_check(vk_up) + keyboard_check(vk_down)
+		y += _vmove * .75;
+		if place_meeting(x,y+1,obj_wall) && _vmove > 0 onLadder = false;
+		
 	}
 	else
 	{
-		vsp = vsp + grv;
-	}
-	phsp = hsp;
-	
-	if _move == 0 {
-		hsp = hsp * .8;
-	} else {
-		hsp = phsp + _move *.1 ;
-	}
-	
-	if abs(hsp) > walksp
-	{
-		hsp = _move * walksp;
-	}
-	
-	if keyboard_check_released(vk_space) and vsp < 0
-	{
-		vsp = vsp / 2;
-	}
-	
-	
-	
-	if (!place_meeting(x,y+1,obj_wall)) && (doublejumpsp == 1) && keyboard_check_pressed(vk_space)    
-	{
-		if global.jump_on_2 && global.success_jumps > 1
+		// Calculate movement
+		var _move = key_right - key_left;
+
+		if vsp > 4
 		{
-			vsp = -jumpsp*1.35;
+			vsp = 4;
 		}
 		else
 		{
-			vsp = -jumpsp;
+			vsp = vsp + grv;
 		}
-		doublejumpsp -= 1;
-		if onGround == true {global.success_jumps += 1};
-	} 
+		phsp = hsp;
 	
-	/*
-	if vsp != grv
-	{
-		hsp = phsp + _move * 0.1;
-	}
-	*/
-	
-	
-	
-
-	// checking for solid ground
-	onGround = false;
-	if place_meeting(x,y+1,obj_wall)
-	{
-		onGround = true;
-	}
-	
-	// check if you are standing on jumpthrough platform
-	with(obj_jumpthoughplatform)
-	{
-		if place_meeting(x,y-1,other) && !place_meeting(x,y,other)
-		{
-			other.onGround = true;
+		if _move == 0 {
+			if abs(hsp) < 0.1 hsp = 0;
+			else hsp *= .8;
+		} else {
+			hsp = phsp + _move *.1 ;
 		}
-	}
 	
-	
-	// script for one way platform
-	scr_jumpthroughcollisions(obj_jumpthoughplatform);
-		
-	
-	if onGround && key_jump > 0
-	{
-		global.success_jumps +=  1;
-		if global.jump_on_2 && global.success_jumps > 1
+		if abs(hsp) > walksp
 		{
-			vsp = -jumpsp*1.5;
+			hsp = _move * walksp;
+		}
+	
+		if keyboard_check_released(vk_space) and vsp < 0
+		{
+			vsp = vsp / 2;
+		}
+	
+	
+		if place_meeting(x,y,obj_ladder) and keyboard_check_pressed(vk_up)
+		{
+			onLadder = true;
+		}
+		else if place_meeting(x,y+2,obj_ladder) and keyboard_check_pressed(vk_down) && !place_meeting(x,y+1,obj_wall)
+		{
+			y += 2;
+			onLadder = true;
 		}
 		else
 		{
-			vsp = -jumpsp;
+			onLadder  =false;
 		}
 		
-	}
-	else if onGround && vsp == grv
-	{
-		vsp = 0;
-	}
+		if (!place_meeting(x,y+1,obj_wall)) && (doublejumpsp == 1) && keyboard_check_pressed(vk_space)    
+		{
+			if global.jump_on_2 && global.success_jumps > 1
+			{
+				vsp = -jumpsp*1.35;
+			}
+			else
+			{
+				vsp = -jumpsp;
+			}
+			doublejumpsp -= 1;
+			if onGround == true {global.success_jumps += 1};
+		} 
+	
+		/*
+		if vsp != grv
+		{
+			hsp = phsp + _move * 0.1;
+		}
+		*/
+	
+		if place_meeting(x,y-1,obj_wall) 
+		{
+			y += 1;
+			vsp = 0;
+		}
+
+		// checking for solid ground
+		onGround = false;
+		if place_meeting(x,y+1,obj_wall)
+		{
+			onGround = true;
+		}
+	
+		// check if you are standing on jumpthrough platform
+		with(obj_jumpthoughplatform)
+		{
+			if place_meeting(x,y-1,other) && !place_meeting(x,y,other)
+			{
+				other.onGround = true;
+			}
+		}
+	
+	
+		// script for one way platform
+		scr_jumpthroughcollisions(obj_jumpthoughplatform);
+		
+	
+		if onGround && key_jump > 0
+		{
+			global.success_jumps +=  1;
+			if global.jump_on_2 && global.success_jumps > 1
+			{
+				vsp = -jumpsp*1.5;
+			}
+			else
+			{
+				vsp = -jumpsp;
+			}
+		
+		}
+		else if onGround && vsp == grv
+		{
+			vsp = 0;
+		}
 	
 
-	StateFree();
+		state = StateFree();
 		
-	//if place_meeting(x,y+4,obj_wall) && vsp > 0
-	//{
-//		while !place_meeting(x,y+1,obj_slope) y+=1;
-	//}
+		//if place_meeting(x,y+4,obj_wall) && vsp > 0
+		//{
+	//		while !place_meeting(x,y+1,obj_slope) y+=1;
+		//}
+		if !place_meeting(x,y+1,obj_wall) && place_meeting(x,y+2,obj_slope) && vsp > 0
+		{
+			while !place_meeting(x,y+1,obj_slope) y += 1;
+		}
 		
-	var _hcol = move_and_collide(hsp,0,obj_wall,ceil(abs(hsp)));
+		var _hcol = move_and_collide(hsp,0,obj_wall,ceil(abs(hsp)));
 	
-	var _vcol = move_and_collide(0,vsp,obj_wall,ceil(abs(vsp)),hsp,vsp,hsp,vsp)
-	if array_length(_vcol) > 0
-	{
+		var _vcol = move_and_collide(0,vsp,obj_wall,ceil(abs(vsp)),hsp,vsp,hsp,vsp)
+		if array_length(_vcol) > 0
+		{
+			
+			vsp = 0;
+		
+		}
 		y = floor(y)
-		vsp = 0;
 		
-	}
-	y = floor(y)
-	global.test = y;
 	
-
+	
+	}
 }

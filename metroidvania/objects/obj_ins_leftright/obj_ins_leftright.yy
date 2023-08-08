@@ -10,8 +10,8 @@
     "path": "folders/Objects/Instruction.yy",
   },
   "parentObjectId": {
-    "name": "obj_instruct",
-    "path": "objects/obj_instruct/obj_instruct.yy",
+    "name": "obj_speech",
+    "path": "objects/obj_speech/obj_speech.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,

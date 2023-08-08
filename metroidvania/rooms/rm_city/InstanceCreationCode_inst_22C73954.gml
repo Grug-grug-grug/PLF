@@ -1,0 +1,1 @@
+objname = obj_ladder_long;
