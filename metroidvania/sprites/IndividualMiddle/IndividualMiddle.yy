@@ -2,9 +2,9 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "IndividualMiddle",
-  "bbox_bottom": 15,
+  "bbox_bottom": 9,
   "bbox_left": 1,
-  "bbox_right": 14,
+  "bbox_right": 8,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3f2c13e0-20a5-47a0-b1ec-19215aa3e6ff",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"dc537433-65d2-4734-b26d-e72574b7b16c",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 16,
+  "height": 10,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"d3c17b95-a6be-4ea0-a846-79c045fcb802","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"7ddacdd2-5732-48d8-bd1b-b65ae72b32b2","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"3f2c13e0-20a5-47a0-b1ec-19215aa3e6ff","path":"sprites/IndividualMiddle/IndividualMiddle.yy",},},},"Disabled":false,"id":"abc79fd3-64a9-4762-9b60-4879340a7acc","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"dc537433-65d2-4734-b26d-e72574b7b16c","path":"sprites/IndividualMiddle/IndividualMiddle.yy",},},},"Disabled":false,"id":"d1abd88a-1924-418b-8aac-7fe91d9675a5","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 16,
+  "width": 10,
 }

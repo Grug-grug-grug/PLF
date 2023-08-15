@@ -2,9 +2,9 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "TopMiddle",
-  "bbox_bottom": 15,
+  "bbox_bottom": 9,
   "bbox_left": 0,
-  "bbox_right": 15,
+  "bbox_right": 9,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"dc9f4cbf-721f-443f-95de-b6f2e11b241b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b3e63d6d-4bee-40ba-945b-87fe9b3b463d",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 16,
+  "height": 10,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"abb50661-4578-4299-a430-0a147bf77332","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"4e58e1a3-d5b3-4cd5-b613-45f5001f63b1","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"dc9f4cbf-721f-443f-95de-b6f2e11b241b","path":"sprites/TopMiddle/TopMiddle.yy",},},},"Disabled":false,"id":"7b0b9bcb-244c-4df7-9062-70cfc4f5c1f5","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"b3e63d6d-4bee-40ba-945b-87fe9b3b463d","path":"sprites/TopMiddle/TopMiddle.yy",},},},"Disabled":false,"id":"f543e847-2177-47e3-b015-3db6d7e69171","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 16,
+  "width": 10,
 }

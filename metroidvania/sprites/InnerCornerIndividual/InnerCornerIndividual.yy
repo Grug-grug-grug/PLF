@@ -2,9 +2,9 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "InnerCornerIndividual",
-  "bbox_bottom": 15,
+  "bbox_bottom": 9,
   "bbox_left": 0,
-  "bbox_right": 15,
+  "bbox_right": 9,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"df377757-9dbb-4682-857c-63d1c285751a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"db3250ee-74ae-43ae-af09-788ec59fe3db",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 16,
+  "height": 10,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"872b1bd7-72a8-46cb-9242-5bb1755c1525","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"d62531e2-8a8d-4e00-a6e5-7b6c0438d3dd","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"df377757-9dbb-4682-857c-63d1c285751a","path":"sprites/InnerCornerIndividual/InnerCornerIndividual.yy",},},},"Disabled":false,"id":"fc7acf64-37b4-4ab0-88da-e3654fa429b3","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"db3250ee-74ae-43ae-af09-788ec59fe3db","path":"sprites/InnerCornerIndividual/InnerCornerIndividual.yy",},},},"Disabled":false,"id":"a209326b-9704-4301-abb1-01fdc647fc3c","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 16,
+  "width": 10,
 }

@@ -21,9 +21,34 @@ switch(music_track)
 	case 9: audio_play_sound(IBP_The_Cheese_Bleus,1,	true,.5,0.6); song_bpm = 40; break;
 
 }*/
-song_bpm = 60;
+song_bpm = 50;
 bpm = int64(3600/song_bpm); // 3600 seconds / 50% of the BPM
 doublebpm = bpm / 2;
 doublebpm_counter = 0;
 global.no_beat = bpm;
 global.time_left = bpm;
+
+// music
+
+
+DW_B1 = audio_play_sound(Digital_World_Bass_1,1,true,.6,1.2); 
+// first powerup
+DW_B3 = audio_play_sound(Digital_World_Bass_3,1,true,0,1.2); 
+DW_K2 = audio_play_sound(Digital_World_Kick_2,1,true,0,1.2); 
+DW_S1 = audio_play_sound(Digital_World_Snare_1,1,true,0,1.2); 
+// jumps in a row
+DW_B2 = audio_play_sound(Digital_World_Bass_2,1,true,0,1.2); 
+DW_K1 = audio_play_sound(Digital_World_Kick_1,1,true,0,1.2); 
+DW_HH = audio_play_sound(Digital_World_Hi_Hat,1,true,0,1.2); 
+
+/*audio_play_sound(track_1,1,	true,.5,1.2);
+audio_play_sound(track_1,1,	true,.5,1.2); 
+audio_play_sound(track_1,1,	true,.5,1.2);
+audio_play_sound(track_1,1,	true,.5,1.2); 
+audio_play_sound(track_1,1,	true,.5,1.2);
+audio_play_sound(track_1,1,	true,.5,1.2); 
+audio_play_sound(track_1,1,	true,.5,1.2);
+audio_play_sound(track_1,1,	true,.5,1.2); 
+audio_play_sound(track_1,1,	true,.5,1.2);*/
+
+

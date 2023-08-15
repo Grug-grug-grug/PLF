@@ -20,6 +20,7 @@
     {"name":"inst_13E9AE76","path":"rooms/rm_hub/rm_hub.yy",},
     {"name":"inst_7428DBE7","path":"rooms/rm_hub/rm_hub.yy",},
     {"name":"inst_52198F64","path":"rooms/rm_hub/rm_hub.yy",},
+    {"name":"inst_5BBE8FE1","path":"rooms/rm_hub/rm_hub.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -38,7 +39,8 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_13E9AE76","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_shake","path":"objects/obj_shake/obj_shake.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":50.0,"y":160.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7428DBE7","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_textbox","path":"objects/obj_textbox/obj_textbox.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":130.0,"y":160.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_52198F64","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_textbox","path":"objects/obj_textbox/obj_textbox.yy",},"properties":[],"rotation":0.34774235,"scaleX":1.0,"scaleY":1.0,"x":90.0,"y":160.0,},
-      ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":false,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5BBE8FE1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_render","path":"objects/obj_render/obj_render.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":150.0,"y":-20.0,},
+      ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"window","depth":200,"effectEnabled":true,"effectType":null,"gridX":5,"gridY":5,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_191DE49A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_room","path":"objects/obj_room/obj_room.yy",},"properties":[],"rotation":0.0,"scaleX":16.0,"scaleY":9.0,"x":0.0,"y":10.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":false,},

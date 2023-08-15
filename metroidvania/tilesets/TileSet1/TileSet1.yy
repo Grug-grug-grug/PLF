@@ -34,10 +34,7 @@
     "name": "Tile Sets",
     "path": "folders/Tile Sets.yy",
   },
-  "spriteId": {
-    "name": "Tilesheet",
-    "path": "sprites/Tilesheet/Tilesheet.yy",
-  },
+  "spriteId": null,
   "spriteNoExport": false,
   "textureGroupId": {
     "name": "texturegroup1",

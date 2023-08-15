@@ -8,6 +8,7 @@ vsp = 0;
 grv = 0.3;
 walksp = 2; //3
 jumpsp = 1; //5
+og_jumpsp = 1.5;
 doublejumpsp = 7;
 thrustjump = 0;
 onGround=true;
@@ -15,6 +16,8 @@ onLadder = false;
 xSubPixel = 0;
 ySubPixel = 0;
 
+parkour_momentum = 4;
+prev_parkour_momentum = 0;
 
 StateFree = function()
 {

@@ -13,19 +13,27 @@ if (global.Paused == true){
 	// Get Player inputs
 	key_left = keyboard_check(vk_left);
 	key_right = keyboard_check(vk_right);
-
+	key_jump = keyboard_check_pressed(vk_space);
 	
-	if global.time_left > 12 and global.time_left < 30
+	var _gSJ = global.success_jumps;
+	
+
+	audio_sound_gain(obj_timer.DW_B2, _gSJ/10, 5);
+	audio_sound_gain(obj_timer.DW_K1, _gSJ/10, 5);
+	audio_sound_gain(obj_timer.DW_HH, _gSJ/10, 5);
+	
+	if global.time_left > 12 and global.time_left < 30 && global.jump
 	{
-		key_jump = keyboard_check_pressed(vk_space);
-		key_thrust = keyboard_check_pressed(vk_shift);
-		
+		jumpsp = og_jumpsp * 2;
+		if _gSJ > 0 && jumpsp < og_jumpsp * 3
+		{
+			jumpsp = (1+_gSJ/10) * jumpsp;
+		}
 	}
 	else
 	{
-		key_jump = 0;
-		key_thrust = 0;
-		if keyboard_check_pressed(vk_space) && key_jump == 0 && doublejumpsp == 0 || keyboard_check_pressed(vk_space) && key_jump == 0 && onGround == true
+		jumpsp = og_jumpsp
+		if keyboard_check_pressed(vk_space) && onGround == true && doublejumpsp > 0
 		{
 			
 			global.success_jumps = 0; 
@@ -52,11 +60,6 @@ if (global.Paused == true){
 	{
 		jumpsp = 5;
 	}
-	else if global.jump 
-	{
-		jumpsp = 3;
-	}
-	else {jumpsp = 0};
 	
 	if place_meeting(x,y,obj_ladder) and onLadder
 	{
@@ -69,6 +72,19 @@ if (global.Paused == true){
 		if place_meeting(x,y+1,obj_wall) && _vmove > 0 onLadder = false;
 		
 	}
+	//else if (place_meeting(x-1,y,obj_wall)  || place_meeting(x+1,y,obj_wall)) && owall
+	//{
+		
+		//var _move = key_right - key_left;
+		//prev_parkour_momentum = parkour_momentum;
+		//parkour_momentum = _move * .75 * prev_parkour_momentum;
+		//y -= parkour_momentum;
+		//if parkour_momentum < 0.1
+		//{
+	//		x = x + 1;
+	//	}
+		
+	//}
 	else
 	{
 		// Calculate movement
@@ -118,7 +134,7 @@ if (global.Paused == true){
 		
 		if (!place_meeting(x,y+1,obj_wall)) && (doublejumpsp == 1) && keyboard_check_pressed(vk_space)    
 		{
-			if global.jump_on_2 && global.success_jumps > 1
+			if global.jump_on_2 && _gSJ > 1
 			{
 				vsp = -jumpsp*1.35;
 			}
@@ -164,12 +180,13 @@ if (global.Paused == true){
 		scr_jumpthroughcollisions(obj_jumpthoughplatform);
 		
 	
-		if onGround && key_jump > 0
+		if onGround && key_jump > 0 
 		{
-			global.success_jumps +=  1;
-			if global.jump_on_2 && global.success_jumps > 1
+			
+			if  global.time_left > 12 and global.time_left < 30
 			{
-				vsp = -jumpsp*1.5;
+				global.success_jumps +=  1;
+				vsp = -jumpsp;
 			}
 			else
 			{
