@@ -1,4 +1,4 @@
 
-	target_rm = rm_hub;
-	target_x = 50;
-	target_y = 130;
+	target_rm = rm_falling;
+	target_x = 10;
+	target_y = 10;

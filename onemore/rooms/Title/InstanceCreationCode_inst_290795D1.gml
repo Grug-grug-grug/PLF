@@ -1,1 +1,1 @@
-target_rm = rm_intro_game;
+target_rm = rm_sleep;

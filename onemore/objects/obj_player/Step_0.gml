@@ -1,17 +1,26 @@
 /// Basic player logic
-if global.game_pause = true
+/*if global.game_pause = true
 {
 	image_speed = 0;
 }
 if global.game_pause = false
 {
-global.chat_active = 0;
 
-var right_key = keyboard_check(vk_right);
-var left_key = keyboard_check(vk_left);
-var up_key = keyboard_check(vk_up);
-var down_key = keyboard_check(vk_down);
-
+*/
+if global.chat_active_options == 0
+{
+	var right_key = keyboard_check(vk_right);
+	var left_key = keyboard_check(vk_left);
+	var up_key = keyboard_check(vk_up);
+	var down_key = keyboard_check(vk_down);
+} 
+if global.chat_active_options == 1
+{
+	var right_key = 0;
+	var left_key = 0;
+	var up_key = 0;
+	var down_key = 0;
+}
 var xspd = (right_key - left_key) * move_spd;
 var yspd = (down_key - up_key) * move_spd;
 
@@ -112,4 +121,4 @@ if xspd == 0 and yspd == 0
 	
 polygon = polygon_from_instance(id);
 
-}	
+	

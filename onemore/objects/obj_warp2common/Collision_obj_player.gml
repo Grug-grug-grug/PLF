@@ -9,9 +9,8 @@ if global.safe_key == 1
 }
 if global.safe_key == 0
 {
-	if       keyboard_check_pressed(vk_space) and global.chat_active == 0
+	if       keyboard_check_pressed(vk_space)
 		{
-		global.chat_active = 0;
 		global.game_pause = true;
 		create_textbox("door_closed");
 		}

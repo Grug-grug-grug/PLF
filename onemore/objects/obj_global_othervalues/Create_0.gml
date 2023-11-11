@@ -14,6 +14,7 @@ global.new_y_position = 0;
 global.text_speed = 0.75;
 global.game_pause = false;
 global.chat_active = 0;
+global.chat_active_options = 0;
 global.text_centre = false;
 
 // Sleep room keys

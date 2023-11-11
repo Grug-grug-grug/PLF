@@ -1,9 +1,9 @@
 {
   "resourceType": "GMNotes",
   "resourceVersion": "1.1",
-  "name": "LICENSE",
+  "name": "License",
   "parent": {
-    "name": "Lighting",
-    "path": "folders/Notes/Lighting.yy",
+    "name": "About",
+    "path": "folders/Horri-fi/About.yy",
   },
 }

@@ -1,6 +1,6 @@
 /// @desc ???
 randomize();
-global.time_left = 50;
+global.time_left = 20;
 global.loopnumber = irandom_range(100000,120000);
 global.current_loop = 1;
 global.newloop = 1;

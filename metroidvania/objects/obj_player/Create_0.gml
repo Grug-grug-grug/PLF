@@ -9,6 +9,7 @@ grv = 0.3;
 walksp = 2; //3
 jumpsp = 1; //5
 og_jumpsp = 1.5;
+walljumpsp = 4;
 doublejumpsp = 7;
 thrustjump = 0;
 onGround=true;
@@ -16,40 +17,21 @@ onLadder = false;
 xSubPixel = 0;
 ySubPixel = 0;
 
-parkour_momentum = 4;
-prev_parkour_momentum = 0;
+
+onParkour = false;
+parkourTimer = 0;
+pvsp = 0;
 
 StateFree = function()
 {
-	var _atLedge = false;
-	
-	if (place_meeting(x + hsp, y, obj_wall)) 
-	{
-		if global.ledgegrab == true
-		{
-			var _horiWall = instance_place(x + hsp, y, obj_wall);
-			if !position_meeting((sign(hsp) == 1) ? _horiWall.bbox_left : _horiWall.bbox_right, _horiWall.bbox_top - 1, obj_wall)
-			{
-				_atLedge = true;
-				var _ledgeAboveorBelow = sign(obj_player.bbox_top - _horiWall.bbox_top);
-			}
-		}
-	}
-	
-	if (_atLedge) && (_ledgeAboveorBelow != sign(obj_player.bbox_top- _horiWall.bbox_top))
-	{
-		y = _horiWall.bbox_top + sprite_get_yoffset(spr_Wall_Grabani);
-		state = StateLedge;
-		sprite_index = spr_Wall_Grabani;
-	}
-	else if !place_meeting(x,y+1,obj_wall) && !place_meeting(x,y+1,obj_jumpthoughplatform)
+	if !place_meeting(x,y+1,obj_wall) && !place_meeting(x,y+1,obj_jumpthoughplatform)
 	{
 		if vsp < 0
 			{
 				sprite_index = Anim_Jump_up;
 				
 			}
-		else if vsp > 2
+		else if vsp > 1
 		{
 			sprite_index = Anim_Jump_down;
 			
@@ -104,30 +86,4 @@ StateFree = function()
 	
 	
 	
-
-
-StateLedge = function()
-{
-	// Work out if we should jump
-	if (key_jump)
-	{
-		if global.jump_on_2 && global.success_jumps > 1
-		{
-			vsp = -jumpsp*2;
-		}
-		else
-		{
-			vsp = -jumpsp * 1.5;
-		}
-		var _move = key_right - key_left;
-		hsp = _move * walksp * 1.25;
-		doublejumpsp = 1;
-		state = StateFree;
-	}
-	if keyboard_check_pressed(vk_down) {
-		vsp = grv; 
-		state = StateFree;
-	}
-		
-}
 

@@ -27,8 +27,13 @@ if (global.Paused == true){
 		jumpsp = og_jumpsp * 2;
 		if _gSJ > 0 && jumpsp < og_jumpsp * 3
 		{
+			if _gSJ > 10
+			{
+				_gSJ = 10;
+			}
 			jumpsp = (1+_gSJ/10) * jumpsp;
 		}
+		
 	}
 	else
 	{
@@ -56,11 +61,8 @@ if (global.Paused == true){
 	{
 		doublejumpsp = 1;
 	}	
-	if global.jumpheight
-	{
-		jumpsp = 5;
-	}
 	
+	// check ladder logic
 	if place_meeting(x,y,obj_ladder) and onLadder
 	{
 		
@@ -72,52 +74,90 @@ if (global.Paused == true){
 		if place_meeting(x,y+1,obj_wall) && _vmove > 0 onLadder = false;
 		
 	}
-	//else if (place_meeting(x-1,y,obj_wall)  || place_meeting(x+1,y,obj_wall)) && owall
-	//{
-		
-		//var _move = key_right - key_left;
-		//prev_parkour_momentum = parkour_momentum;
-		//parkour_momentum = _move * .75 * prev_parkour_momentum;
-		//y -= parkour_momentum;
-		//if parkour_momentum < 0.1
-		//{
-	//		x = x + 1;
-	//	}
-		
-	//}
-	else
+	
+	// if parkour active, do it
+	else if onParkour
 	{
-		// Calculate movement
+		onGround = false;
 		var _move = key_right - key_left;
-
-		if vsp > 4
+		if hsp != 0 
+		{	
+			vsp = abs(hsp);
+			hsp = 0;
+		}
+		
+		if keyboard_check_pressed(vk_space) 
 		{
-			vsp = 4;
+			parkourTimer = 5;
+			vsp = -jumpsp*2;
+			hsp = -1.25*_move*jumpsp;
+			//x += _move * -1;
+			phsp = hsp;
+			onParkour = false;
+			//global.test = _move;
 		}
 		else
 		{
-			vsp = vsp + grv;
+			parkourTimer = 5;
+			if _move == 0 || (!place_meeting(x+1,y,obj_wall) && !place_meeting(x-1,y,obj_wall)) || abs(vsp) < 0.4
+			{
+				onParkour = false;
+				vsp = -grv;
+				
+								
+			}
+			else 
+			{
+				pvsp = abs(vsp);
+				vsp = pvsp  *.95 ;
+				y -= vsp;
+			}
+			//image_angle = 90 * _move;
+			
 		}
-		phsp = hsp;
-	
-		if _move == 0 {
-			if abs(hsp) < 0.1 hsp = 0;
-			else hsp *= .8;
-		} else {
-			hsp = phsp + _move *.1 ;
-		}
-	
-		if abs(hsp) > walksp
+		
+	}
+	else
+	{
+		// Calculate movement
+		if parkourTimer > 0 
 		{
-			hsp = _move * walksp;
+			
+			parkourTimer -= 1;
+			
 		}
-	
-		if keyboard_check_released(vk_space) and vsp < 0
+		else
 		{
-			vsp = vsp / 2;
+			var _move = key_right - key_left;
+			phsp = hsp;
+	
+			if _move == 0 
+			{
+				if abs(hsp) < 0.1 hsp = 0;
+				else hsp *= .8;
+			}
+			else 
+			{
+				hsp = phsp + _move *.1 ;
+			
+			}
+	
+			if abs(hsp) > walksp && onGround 
+			{
+				hsp = _move * walksp;
+			}
+			
+			if abs(hsp) > 2 hsp = 2 * _move;
 		}
+		
+		
+		
 	
+		
 	
+		// check if you are at a ladder and press up
+		// if so, onladder is true
+		
 		if place_meeting(x,y,obj_ladder) and keyboard_check_pressed(vk_up)
 		{
 			onLadder = true;
@@ -132,6 +172,19 @@ if (global.Paused == true){
 			onLadder  =false;
 		}
 		
+		if vsp > 4
+		{
+			vsp = 4;
+		}
+		else
+		{
+			vsp = vsp + grv;
+		}
+		if keyboard_check_released(vk_space) and vsp < 0
+		{
+			vsp = vsp / 2;
+		}
+		// double jump
 		if (!place_meeting(x,y+1,obj_wall)) && (doublejumpsp == 1) && keyboard_check_pressed(vk_space)    
 		{
 			if global.jump_on_2 && _gSJ > 1
@@ -143,27 +196,27 @@ if (global.Paused == true){
 				vsp = -jumpsp;
 			}
 			doublejumpsp -= 1;
-			if onGround == true {global.success_jumps += 1};
+			
 		} 
 	
-		/*
-		if vsp != grv
-		{
-			hsp = phsp + _move * 0.1;
-		}
-		*/
 	
+	
+		// i think this is so you dont sink into the floor
 		if place_meeting(x,y-1,obj_wall) 
 		{
 			y += 1;
 			vsp = 0;
+			
+			//global.test = 4;
 		}
+		
 
 		// checking for solid ground
 		onGround = false;
 		if place_meeting(x,y+1,obj_wall)
 		{
 			onGround = true;
+			onParkour = false;
 		}
 	
 		// check if you are standing on jumpthrough platform
@@ -182,47 +235,45 @@ if (global.Paused == true){
 	
 		if onGround && key_jump > 0 
 		{
-			
-			if  global.time_left > 12 and global.time_left < 30
-			{
-				global.success_jumps +=  1;
-				vsp = -jumpsp;
-			}
-			else
-			{
-				vsp = -jumpsp;
-			}
-		
+			vsp = -jumpsp;
+			global.success_jumps += 1;
 		}
 		else if onGround && vsp == grv
 		{
 			vsp = 0;
 		}
 	
-
-		state = StateFree();
-		
-		//if place_meeting(x,y+4,obj_wall) && vsp > 0
-		//{
-	//		while !place_meeting(x,y+1,obj_slope) y+=1;
-		//}
-		if !place_meeting(x,y+1,obj_wall) && place_meeting(x,y+2,obj_slope) && vsp > 0
+		if place_meeting(x+sign(hsp),y-1,obj_wall) && abs(hsp) >1.9
 		{
-			while !place_meeting(x,y+1,obj_slope) y += 1;
+			onParkour = false;
 		}
-		
-		var _hcol = move_and_collide(hsp,0,obj_wall,ceil(abs(hsp)));
-	
-		var _vcol = move_and_collide(0,vsp,obj_wall,ceil(abs(vsp)),hsp,vsp,hsp,vsp)
-		if array_length(_vcol) > 0
+		else if place_meeting(x+sign(hsp),y,obj_wall) && abs(hsp) < 2 && onGround
 		{
+			hsp = 0;
+			vsp = -grv;
 			
-			vsp = 0;
-		
 		}
-		y = floor(y)
+		else 
+		{
+			onParkour = false;
+			if !place_meeting(x,y+1,obj_wall) && place_meeting(x,y+2,obj_slope) && vsp > 0
+			{
+				while !place_meeting(x,y+1,obj_slope) y += 1;
+			}
+		
+			var _hcol = move_and_collide(hsp,0,obj_wall,ceil(abs(hsp)));
+	
+			var _vcol = move_and_collide(0,vsp,obj_wall,ceil(abs(vsp)),(hsp),(vsp),(hsp),(vsp))
+			if array_length(_vcol) > 0
+			{
+			
+				vsp = 0;
+			}
+			y = floor(y)
+		}
 		
 	
 	
+		}
 	}
-}
+	StateFree();

@@ -2,10 +2,10 @@
 
 accept_key = keyboard_check_pressed(vk_space);
 
+global.chat_active = 1;
 
 
-
-global.game_pause = true;
+//global.game_pause = true;
 if text_top == true
 {
 	textbox_x = camera_get_view_x(view_camera[0])-50;
@@ -52,7 +52,7 @@ if draw_char < text_length[page]
 
 
 // Flip through pages
-if accept_key == true and global.chat_active == 1
+if accept_key == true
 {
 		
 	// If typing is done go to next page
@@ -70,12 +70,14 @@ if accept_key == true and global.chat_active == 1
 			// link text for options
 			if option_number > 0
 			{
+				
 				create_textbox(option_link_id[option_pos]);
 			}
 					
 			instance_destroy();
-			global.game_pause = false;
-			global.chat_active = 0;	
+			global.chat_active = 0;
+			global.chat_active_options = 0;
+
 		}
 		
 	}
@@ -87,7 +89,7 @@ if accept_key == true and global.chat_active == 1
 }
 
 
-global.chat_active = 1;
+
 // Draw text box
 
 var _txtb_y = textbox_y

@@ -5,7 +5,7 @@ if global.game_pause = true
 }
 if global.game_pause = false
 {
-global.chat_active = 0;
+
 global.text_centre = false;
 
 var right_key = keyboard_check(vk_left);
