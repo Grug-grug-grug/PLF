@@ -23,6 +23,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Objects","folderPath":"folders/Objects.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"City","folderPath":"folders/Objects/City.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Switches","folderPath":"folders/Objects/City/Switches.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Enemies","folderPath":"folders/Objects/Enemies.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Global","folderPath":"folders/Objects/Global.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Instruction","folderPath":"folders/Objects/Instruction.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Lighting","folderPath":"folders/Objects/Lighting.yy",},
@@ -64,7 +65,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Individual","folderPath":"folders/Sprites/tiles/tiles_city/Individual.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Enemies","folderPath":"folders/Objects/Enemies.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"blocks-16bit.ttf","CopyToMask":-1,"filePath":"datafiles",},

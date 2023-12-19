@@ -128,26 +128,26 @@ if (global.Paused == true){
 		}
 		else
 		{
-			var _move = key_right - key_left;
-			phsp = hsp;
+				var _move = key_right - key_left;
+				phsp = hsp;
 	
-			if _move == 0 
-			{
-				if abs(hsp) < 0.1 hsp = 0;
-				else hsp *= .8;
-			}
-			else 
-			{
-				hsp = phsp + _move *.1 ;
+				if _move == 0 
+				{
+					if abs(hsp) < 0.1 hsp = 0;
+					else hsp *= .8;
+				}
+				else 
+				{
+					hsp = phsp + _move *.1 ;
 			
-			}
+				}
 	
-			if abs(hsp) > walksp && onGround 
-			{
-				hsp = _move * walksp;
-			}
+				if abs(hsp) > walksp && onGround 
+				{
+					hsp = _move * walksp;
+				}
 			
-			if abs(hsp) > 2 hsp = 2 * _move;
+				if abs(hsp) > 2 hsp = 2 * _move;
 		}
 		
 		

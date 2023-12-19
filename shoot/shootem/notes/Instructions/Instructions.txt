@@ -1,0 +1,28 @@
+Hello and Welcome!
+
+This is a very fast and simple to setup pause system to your games.
+
+The first thing to do is add the object "oPauseButtom" to the room. The layer for this buttom is 
+not really relevant. And position it using the white rectangle of the viewport in the room editor.
+If you want to have a visible pause buttom in your game, just add some sprite to this object (oPauseButtom).
+If this object don't have a sprite, the only way to pause is with the keyboard, that is configurable 
+changing the "Key Press" event. Just change it to the key that you want. 
+
+The second thing to do is to enable viewports and make it visible. I configured the pause system to use 
+viewport 0, if you want to use any other, just change it in the create and draw events of the oPauseButtom.
+
+The third thing to do is to add the Label and Buttons of the paused menu. I highly recomend that the layer
+of these buttons and label is above the layer of the oPauseButtom.
+Just position the label and buttoms using the white rectangle of the viewport in the room editor. These 
+positions will be the positions that the player will see them in the game. Do not worry, they will keep
+the position relative to the viewport.
+
+If you want to add new labels or buttoms for the pause menu, just duplicate the oPauseExitButtom and
+change the code used in the left pressed event.
+
+Now you have a fully functional pause menu for your games. Fast and easy.
+
+Happy game making!!!
+
+Any questions/ suggestions/ bugs, just leave in the comments os my itch.io page.
+https://pkgames.itch.io/easy-and-fast-pause-system-with-menu-for-gms-23

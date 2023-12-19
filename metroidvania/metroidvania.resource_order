@@ -5,6 +5,7 @@
     {"name":"DigitalWorld","order":2,"path":"folders/Music/Menu/DigitalWorld.yy",},
     {"name":"City","order":36,"path":"folders/Objects/City.yy",},
     {"name":"Switches","order":1,"path":"folders/Objects/City/Switches.yy",},
+    {"name":"Enemies","order":39,"path":"folders/Objects/Enemies.yy",},
     {"name":"Instruction","order":35,"path":"folders/Objects/Instruction.yy",},
     {"name":"Random","order":30,"path":"folders/Objects/Random.yy",},
     {"name":"CityAssets","order":17,"path":"folders/Sprites/background/CityAssets.yy",},
@@ -17,7 +18,6 @@
     {"name":"tiles","order":14,"path":"folders/Sprites/tiles.yy",},
     {"name":"tiles_city","order":1,"path":"folders/Sprites/tiles/tiles_city.yy",},
     {"name":"Individual","order":1,"path":"folders/Sprites/tiles/tiles_city/Individual.yy",},
-    {"name":"Enemies","order":39,"path":"folders/Objects/Enemies.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"obj_pulse_flower","order":14,"path":"objects/obj_pulse_flower/obj_pulse_flower.yy",},
