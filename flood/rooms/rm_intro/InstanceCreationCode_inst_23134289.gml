@@ -1,0 +1,1 @@
+help_text = "Hold CONTROL to shut the door";

@@ -17,10 +17,10 @@
     {"name":"Background_forest","order":7,"path":"folders/Sprites/Background_forest.yy",},
     {"name":"Sprite","order":10,"path":"folders/Sprites/Background_forest/Sprite.yy",},
     {"name":"Background_hill","order":5,"path":"folders/Sprites/Background_hill.yy",},
+    {"name":"HillSprites","order":6,"path":"folders/Sprites/Background_hill/HillSprites.yy",},
     {"name":"Character","order":6,"path":"folders/Sprites/Character.yy",},
     {"name":"Tile Sets","order":1,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":6,"path":"folders/Timelines.yy",},
-    {"name":"HillSprites","order":6,"path":"folders/Sprites/Background_hill/HillSprites.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"obj_warp","order":6,"path":"objects/obj_warp/obj_warp.yy",},
