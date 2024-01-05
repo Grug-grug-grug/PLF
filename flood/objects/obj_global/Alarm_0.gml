@@ -18,33 +18,38 @@ else if actual_time > 25
 alarm[0] = 1;
 }
 
-/// Level 2
+/// Level 2 
+
 if obj_level.level == 2
 {
-if actual_time < 5
-{
-water_alarm = int64(random_range(10,20));
-}
-else if actual_time > 5 and actual_time < 7
-{
-	water_alarm = int64(random_range(10,12));
-}
-else if actual_time > 8 and actual_time < 15
-{
-	water_alarm = int64(random_range(10,20));
-}
-else if actual_time > 15 and actual_time < 25
-{
-	water_alarm = int64(random_range(40,60));
-}
-else if actual_time > 25 and actual_time < 30
-{
-	water_alarm = int64(random_range(5,10));
-}
-else if actual_time > 30
-{
-	water_alarm = int64(random_range(2,3));
-}
+	if water_speed == "slow"
+	{
+		water_alarm = int64(random_range(40,50));
+	}
+	else if water_speed == "fast"
+	{
+		water_alarm = int64(random_range(2,4));
+	}
+	else if water_speed == "medium"
+	{
+		water_alarm = int64(random_range(10,20));
+	}
 alarm[0] = 1;
 }
 
+if obj_level.level == 3
+{
+	if water_speed == "slow"
+	{
+		water_alarm = int64(random_range(40,50));
+	}
+	else if water_speed == "fast"
+	{
+		water_alarm = int64(random_range(2,4));
+	}
+	else if water_speed == "medium"
+	{
+		water_alarm = int64(random_range(10,20));
+	}
+alarm[0] = 1;
+}

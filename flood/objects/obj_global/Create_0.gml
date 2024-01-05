@@ -1,5 +1,5 @@
 /// @desc ???
-
+water_speed = "medium";
 start_time = 0;
 alarm[0] = 10;
 water_alarm = 10;
