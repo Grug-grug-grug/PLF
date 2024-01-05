@@ -2,9 +2,14 @@
 
 if place_meeting(x,y,obj_player)
 {
-	draw_text(x,y,help_text);
+draw_set_font(fn_help);
+draw_text(x+sprite_width/2,y+sprite_height/2,help_text);
 }
 
+if place_meeting(x,y,obj_water)
+{
+	instance_destroy();
+}
 
 
 

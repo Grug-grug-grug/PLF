@@ -1,1 +1,1 @@
-help_text = "Hold CONTROL to shut the door";
+help_text = "Hold CONTROL to \n shut the door";

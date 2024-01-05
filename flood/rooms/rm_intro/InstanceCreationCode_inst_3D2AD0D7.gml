@@ -1,1 +1,0 @@
-help_text = "Hold control to push the door shut";
