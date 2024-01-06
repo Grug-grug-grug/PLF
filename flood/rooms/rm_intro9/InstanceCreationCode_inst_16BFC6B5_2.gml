@@ -1,0 +1,1 @@
+help_text = "Bang against the wall!";
