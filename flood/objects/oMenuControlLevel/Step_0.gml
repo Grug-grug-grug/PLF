@@ -17,13 +17,13 @@ if keyboard_check_pressed(menu_confirmation_buttom) {
 	audio_play_sound(sndConfirmation, 100, false);
 	switch(selected) {
 		case 0:	// case of the first  item of the menu
-			screen_transition(TR_TYPE.FADE_TWOPASS, TR_WAY.TWOPASS, false, c_black, room_goto(rm_intro), 0.5, 0, TR_DRAW_TYPE.GUI);
+			screen_transition(TR_TYPE.FADE_TWOPASS, TR_WAY.TWOPASS, false, c_black, start_level(rm_intro), 0.5, 0, TR_DRAW_TYPE.GUI);
 			break;
 		case 1:	// case of the second one 
 			screen_transition(TR_TYPE.FADE_TWOPASS, TR_WAY.TWOPASS, false, c_black, room_goto(rm_harder), 0.5, 0, TR_DRAW_TYPE.GUI);
 			break;
 		case 2:	// case of the thrid one 
-			screen_transition(TR_TYPE.FADE_TWOPASS, TR_WAY.TWOPASS, false, c_black, room_goto(rm_random), 0.5, 0, TR_DRAW_TYPE.GUI);
+			screen_transition(TR_TYPE.FADE_TWOPASS, TR_WAY.TWOPASS, false, c_black, start_level(rm_random), 0.5, 0, TR_DRAW_TYPE.GUI);
 			break;
 		case 3: // you get it
 			room_goto(rm_menu)

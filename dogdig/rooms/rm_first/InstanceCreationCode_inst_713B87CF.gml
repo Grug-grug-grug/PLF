@@ -1,0 +1,1 @@
+energy_number = 2;

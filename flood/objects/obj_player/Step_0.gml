@@ -1,60 +1,16 @@
 /// @desc ???
 
-hmove = (- keyboard_check(vk_left) + keyboard_check(vk_right)) * spd;
-vmove = (- keyboard_check(vk_up) + keyboard_check(vk_down)) * spd;
+dir_spd = keyboard_check(ord("W")) - keyboard_check(ord("S"));
+//straf_spd = keyboard_check(ord("A"))-keyboard_check(ord("D"));
 
+dire = point_direction( obj_player.x, obj_player.y, mouse_x,mouse_y)
+hmove = lengthdir_x(spd*dir_spd, dire);
+vmove = lengthdir_y(spd*dir_spd, dire);
 
 move_and_collide(hmove,vmove,obj_wall);
 
-if hmove > 0
-{
-	if vmove == 0
-	{
-		image_angle = 90;
-		mask_index = spr_player;
-	}
-	else if vmove > 0
-	{
-		image_angle = 45;
-		mask_index = spr_player;
-	}
-	else if vmove < 0
-	{
-		image_angle = 135;
-		mask_index = spr_player;
-	}
-}
-else if hmove < 0
-{
-	if vmove == 0
-	{
-		image_angle = 270;
-		mask_index = spr_player;
-	}
-	else if vmove > 0
-	{
-		image_angle = 235;
-		mask_index = spr_player;
-	}
-	else if vmove < 0
-	{
-		image_angle = 315;
-		mask_index = spr_player;
-	}
-}
-else if hmove == 0
-{
-	if vmove > 0
-	{
-		image_angle = 180;
-		mask_index = spr_player;
-	}
-	else if vmove < 0
-	{
-		image_angle = 0;
-		mask_index = spr_player;
-	}
-}
+
+draw_sprite_ext(sprite_index,0, image_index, x, y, 1, 1, point_direction(x, y, mouse_x, mouse_y), -1);
 
 if crowbar and keyboard_check(vk_alt) and crowbar_swing == false
 {

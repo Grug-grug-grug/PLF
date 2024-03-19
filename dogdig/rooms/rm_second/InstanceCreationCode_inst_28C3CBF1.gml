@@ -1,0 +1,1 @@
+goto_new_room = rm_first;
