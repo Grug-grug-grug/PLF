@@ -1,0 +1,22 @@
+Hi, thanks for purchasing my CHARACTER CONTROLLER for platformers. 
+
+Find a better version of the guide on itch.io or docs.google.com/document/d/16BuSNARsOfhfUjQFIxZSUdSWvRAXziRjrmMzrxflklo/edit?usp=sharing
+
+Setup:
+1. In the create event of your player character, 
+   run 'movement_initiate();' 
+   You can change all of the variables at any time, 
+   in this example the default variables are changed. 
+   (You can find a list of all the variables below)
+
+2. In the step event of your player, 
+   run 'movement_update();' 
+   (You could also update the variables here, 
+   for example, 
+   if you had a booster you could change the speed when colliding with the booster)
+
+3. Create an object named 'obj_collider' 
+   and add all the objects that you want to be collidable as its children
+
+If you find a bug, or have a suggestion please contact me on itch.io.
+Good luck with the rest of your game!

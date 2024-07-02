@@ -10,6 +10,14 @@ key_jump_held = keyboard_check(vk_space)
 var _move = key_right + key_left;
 hsp = _move * msp;
 
+if place_meeting(x,y+1,obj_nodig_move)
+{
+	y -= 0.2;
+}
+if place_meeting(x,y+1,obj_nodig_move) and place_meeting(x,y-1,obj_wall)
+{
+	obj_global.food = 0;
+}
 if place_meeting(x,y,obj_water)
 {
 	grav = 0.01;
