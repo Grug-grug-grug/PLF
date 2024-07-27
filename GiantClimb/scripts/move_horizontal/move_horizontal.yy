@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Movement Functions",
-    "path": "folders/Scripts/Movement Functions.yy",
+    "name": "Movement",
+    "path": "folders/Scripts/Movement.yy",
   },
 }

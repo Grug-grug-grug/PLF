@@ -1,6 +1,7 @@
 function move_horizontal() {
 	// Update horizontal speed
-	var _key_x = (keyboard_check(key_right) or keyboard_check(key_right_sec)) - (keyboard_check(key_left) or keyboard_check(key_left_sec));
+	if (gamepad_axis_value(gamepad_device, gamepad_horizontal) != 0) var _key_x = gamepad_axis_value(gamepad_device, gamepad_horizontal);
+	else var _key_x = (keyboard_check(key_right) or keyboard_check(key_right_sec)) - (keyboard_check(key_left) or keyboard_check(key_left_sec));
 	
 	if (_key_x != 0) {
 		speed_x += force_acceleration * _key_x;

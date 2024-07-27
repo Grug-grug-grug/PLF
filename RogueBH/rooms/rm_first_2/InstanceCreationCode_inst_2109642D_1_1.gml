@@ -1,0 +1,1 @@
+alarmspeed = 10;

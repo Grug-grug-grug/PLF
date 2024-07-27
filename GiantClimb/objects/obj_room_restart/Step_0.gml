@@ -12,9 +12,22 @@ with (obj_slope_path_remove)
 	{
 		instance_destroy()
 	}
+	if path_check = "opening" and obj_global.death_count > 3 
+	{
+		instance_destroy()
+	}
 	
 }
 
+with (obj_wall_path_create)
+{
+
+	if path_check = "opening" and obj_global.death_count > 3 
+	{
+		instance_destroy()
+	}
+	
+}
 instance_destroy();
 
 

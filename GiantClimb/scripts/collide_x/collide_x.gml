@@ -4,7 +4,7 @@ function collide_x(_last_pos) {
 	{
 		y--;
 		speed_x *= slope_resistance;
-		if (!place_meeting(x, y, collider)) {
+		if (!check_collision(x, y)) {
 			slide_down_slope();
 			return;
 		}

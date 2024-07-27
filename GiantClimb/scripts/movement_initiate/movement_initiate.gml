@@ -4,6 +4,8 @@ function movement_initiate() {
 	
 	// Collision
 	collider = obj_collider;
+	moving_platforms = obj_platforms;
+	jump_through_platforms = obj_jumpTrough;
 	
 	// Keybinds
 	key_jump = vk_up;
@@ -31,17 +33,18 @@ function movement_initiate() {
 	// Slopes
 	max_slope_height = 2;
 	slope_resistance = 0.9;
-
+	
 	// Speed
 	speed_x = 0;
 	speed_y = 0;
 	
 	// Other
-	assist_frames = 4;
+	assist_frames = 8;
 	size = 1;
 	
 	// Internal variables
 	falling = noone;
 	jumping = noone;
 	acceleration_cur = noone;
+	jump_through = 0;
 }
