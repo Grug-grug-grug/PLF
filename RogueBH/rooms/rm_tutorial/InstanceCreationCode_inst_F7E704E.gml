@@ -1,0 +1,1 @@
+bossblock = true;

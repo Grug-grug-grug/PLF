@@ -4,13 +4,13 @@ function transition_script(t_script){
 	switch(t_script)
 	{
 		case "tutorial":
-			raw_text = "...booting....          \ninitiating vulnerability research training module       \n\n\n./import/test_module_1.tar\n.....imported successfully         \nopening run.exe      \n......\n\nready";
+			raw_text = "go";
 			text_speed = 10;
 			next_room = rm_tutorial;
 		break;
 		
 		case "level1":
-			raw_text = "test 2   \nready";
+			raw_text = "scoring is\nkilled " + string(obj_global.destroyed_enemy) + "\ndied " + string(obj_global.total_deaths) + "\ntime" + string(obj_global.level_timer) + "\n";
 			text_speed = 10;
 		break;
 	}

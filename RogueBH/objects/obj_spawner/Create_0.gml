@@ -14,7 +14,7 @@ for(i = 0; i < j; ++i)
 	}
 }
 */
-if obj_global.sublevel > 3
+if obj_global.completed_repetitions_required > 0
 {
 	var _x = irandom_range(250,250)
 	var _y = irandom_range(150,150)
@@ -25,7 +25,7 @@ if obj_global.sublevel > 3
 		alarmspeed = random_range(200,300);
 	}
 }
-if obj_global.sublevel > 4
+if obj_global.completed_repetitions_required > 0
 {
 	var _x = irandom_range(340,340)
 	var _y = irandom_range(200,200)
@@ -36,7 +36,7 @@ if obj_global.sublevel > 4
 		alarmspeed = random_range(200,300);
 	}
 }
-if obj_global.sublevel > 5
+if obj_global.completed_repetitions_required > 1
 {
 	var _x = irandom_range(250,250)
 	var _y = irandom_range(200,200)
@@ -47,7 +47,7 @@ if obj_global.sublevel > 5
 		alarmspeed = random_range(200,300);
 	}
 }
-if obj_global.sublevel > 6
+if obj_global.completed_repetitions_required > 1
 {
 	var _x = irandom_range(340,340)
 	var _y = irandom_range(150,150)

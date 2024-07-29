@@ -3,8 +3,14 @@ randomize();
 
 if !mouse_check_button(mb_right) and place_meeting(x,y,obj_player)
 {
-	draw_text_shadow(
-	"Right click to identify vuln");
+	if final_vuln
+	{
+		draw_text_shadow("Identify root vuln")
+	}
+	else
+	{
+		draw_text_shadow("Right click to identify vuln");
+	}
 }
 if mouse_check_button(mb_right) and can_hack and hack_timer < 100
 {
@@ -64,18 +70,23 @@ if mouse_check_button(mb_right) and can_hack and hack_timer < 100
 }
 else if hack_timer == 100
 {
+	if final_vuln
+	{
+		instance_create_layer(x,y,"Bullets",obj_level_complete)
+		instance_destroy()
+	}
 	obj_global.current_hacks += 1;
-	
+	obj_scr_output.raw_text += "\nvuln_fnd"
 	// if everything in room is hacked, then finish and restart the room
 	if obj_global.current_hacks == obj_global.total_number_of_hacks
 	{
 		obj_global.death_metadata = [];
-		obj_global.sublevel += 1;
+		obj_global.completed_repetitions_required += 1;
 		obj_global.total_deaths = 0;
 		if obj_global.level_timer < 15 {obj_global.total_shield_health += 1}
 		obj_global.current_hacks = 0;
 		obj_global.current_shield_health = obj_global.total_shield_health
-		obj_global.bullets_left = obj_global.destroyed_enemy
+		obj_global.player_health = obj_global.player_health_max
 		instance_create_layer(x,y,"Bullets",obj_sublevel_complete)
 		instance_destroy();
 	}

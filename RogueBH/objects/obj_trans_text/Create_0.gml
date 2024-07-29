@@ -6,11 +6,12 @@ t_script = ""
 text_returned = "";
 raw_text = "";
 text_speed = "";
-new_text = "";
+new_text = ""
+;
 i = 1;
 alarm[0] = 4;
 
-next_room = ""
+next_room = rm_initialise
 
 
 
