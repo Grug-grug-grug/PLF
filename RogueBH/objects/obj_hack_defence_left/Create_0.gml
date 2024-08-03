@@ -1,8 +1,8 @@
 /// @desc ???
 
 
+alarm[0] = 30 
 
-room_goto(next_room);
 
 
 

@@ -3,14 +3,15 @@
 //draw_set_font(fnt_default);
 
 // Level metadata
-level = 1;
+level = "tutorial";
+previous_level = "tutorial";
 death_metadata = [];
 total_deaths = 0;
 destroyed_enemy = 0;
 bullets_left = 6;
 level_timer = 0;
-player_health = 3;
-player_health_max = 3;
+player_health = 8;
+player_health_max = 8;
 
 // scoring
 // score is total deaths, time, enemies destroyed

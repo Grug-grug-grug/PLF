@@ -12,12 +12,26 @@ if !mouse_check_button(mb_right) and place_meeting(x,y,obj_player)
 		draw_text_shadow("Right click to identify vuln");
 	}
 }
-if mouse_check_button(mb_right) and can_hack and hack_timer < 100
+if mouse_check_button(mb_right) and can_hack and hack_timer < 200
 {
-	draw_text_color(camera_get_view_x(view_camera[0])+camera_get_view_width(view_camera[0])/2,
-	camera_get_view_y(view_camera[0])+camera_get_view_height(view_camera[0])/2,
-	"fuzz_for_vuln",c_white,c_white,c_white,c_white,1);
+	
+	if hack_timer < 1
+	{
+		obj_scr_output.raw_text += "\nfnd_vuln\n..";
+		
+	}
 	hack_timer += 1
+	if hack_timer == 1
+	{
+		with instance_create_layer(x,y,"Bullets",obj_hack_defence){
+			self.hack_defence = other.hack_defence
+		}
+	}
+	draw_text_shadow("fuzz_for_vuln");
+	//draw_text_color(camera_get_view_x(view_camera[0])+camera_get_view_width(view_camera[0])/2,
+	//camera_get_view_y(view_camera[0])+camera_get_view_height(view_camera[0])/2,
+	//"fuzz_for_vuln",c_white,c_white,c_white,c_white,1);
+	
 	var _hacking_string = []
 	_hacking_string[0] = ""
 	_hacking_string[1] = ""
@@ -68,8 +82,9 @@ if mouse_check_button(mb_right) and can_hack and hack_timer < 100
 	_hacking_string[4],c_lime,c_lime,c_lime,c_lime,.1)
 	
 }
-else if hack_timer == 100
+else if hack_timer == 200
 {
+	
 	if final_vuln
 	{
 		instance_create_layer(x,y,"Bullets",obj_level_complete)
@@ -80,10 +95,10 @@ else if hack_timer == 100
 	// if everything in room is hacked, then finish and restart the room
 	if obj_global.current_hacks == obj_global.total_number_of_hacks
 	{
-		obj_global.death_metadata = [];
+		
 		obj_global.completed_repetitions_required += 1;
-		obj_global.total_deaths = 0;
-		if obj_global.level_timer < 15 {obj_global.total_shield_health += 1}
+		
+		//if obj_global.level_timer < 15 {obj_global.total_shield_health += 1}
 		obj_global.current_hacks = 0;
 		obj_global.current_shield_health = obj_global.total_shield_health
 		obj_global.player_health = obj_global.player_health_max

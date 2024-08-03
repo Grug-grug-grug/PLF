@@ -26,7 +26,7 @@ if mouse_check_button_pressed(mb_left) and fire_rate == true
 	vmove = lengthdir_y(other.spd, dire);
 	}
 	fire_rate = false
-	alarm[0] = 50;
+	alarm[0] = 25;
 	instance_destroy(obj_current_ammo);
 	instance_create_layer(x,y,"Bullets",obj_current_ammo);
 	hmove -= lengthdir_x(5, dire);

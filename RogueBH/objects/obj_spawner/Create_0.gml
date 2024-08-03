@@ -58,6 +58,17 @@ if obj_global.completed_repetitions_required > 1
 		alarmspeed = random_range(200,300);
 	}
 }
+if obj_global.completed_repetitions_required > 2
+{
+	var _x = irandom_range(296,296)
+	var _y = irandom_range(-200,-200)
+
+	with(instance_create_layer(_x, _y, "Instances",obj_shooter_spiral))
+	{
+		spd = random_range(1,2);
+		alarmspeed = random_range(20,30);
+	}
+}
 
 
 

@@ -1,7 +1,6 @@
 /// @desc ???
 
 
-
 instance_destroy();
 
 

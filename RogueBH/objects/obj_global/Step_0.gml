@@ -10,7 +10,7 @@ else if room == rm_initialise
 		level_timer = 0
 }
 
-if level == 1
+if level == "tutorial"
 {
 	
 	total_shield_health = 0;
@@ -18,7 +18,7 @@ if level == 1
 	total_number_of_hacks = 3;
 	number_of_repetitions_required = 3;
 }
-else if level == 2
+else if level == "level1"
 {
 	
 	total_number_of_hacks = 3;

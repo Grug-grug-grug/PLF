@@ -13,10 +13,7 @@ if(i<string_length(raw_text)+1){
     i += 1;
     alarm[0] = text_speed;
 }
-if(i == string_length(raw_text)+1){
 
-    alarm[1] = 30;
-}
 
 
 

@@ -17,14 +17,14 @@ if keyboard_check_pressed(menu_confirmation_buttom) {
 	audio_play_sound(sndConfirmation, 100, false);
 	switch(selected) {
 		case 0:	// case of the first  item of the menu
-			obj_global.level = 1;
+			obj_global.level = "tutorial";
 			obj_global.completed_repetitions_required = 0;
 			
 			draw_set_font(fn5)
 			room_goto(rm_transition_room)
 			break;
 		case 1:	// case of the second one 
-			obj_global.level = 2;
+			obj_global.level = "level1";
 			obj_global.completed_repetitions_required = 0;
 			draw_set_font(fn5)
 
