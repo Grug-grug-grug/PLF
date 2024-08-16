@@ -14,26 +14,36 @@ dire = point_direction( obj_player.x, obj_player.y, mouse_x,mouse_y);
 
 if hit == false
 {
-hmove = spd*dir_spd_x;
-vmove = spd*dir_spd_y;
-if mouse_check_button_pressed(mb_left) and fire_rate == true
-{
-	obj_scr_output.raw_text += "\nmry_crpt\ninitiate"
-	with(instance_create_layer(x,y,"Bullets",obj_mybullet))
+	hmove = spd*dir_spd_x;
+	vmove = spd*dir_spd_y;
+	if vmove == 0 and hmove == 0
+	{}
+	else
 	{
-	dire = other.dire;
-	hmove = lengthdir_x(other.spd, dire);
-	vmove = lengthdir_y(other.spd, dire);
+	 instance_create_layer(x +hmove, y+vmove,"Instances",obj_player_move)
 	}
-	fire_rate = false
-	alarm[0] = 25;
-	instance_destroy(obj_current_ammo);
-	instance_create_layer(x,y,"Bullets",obj_current_ammo);
-	hmove -= lengthdir_x(5, dire);
-	vmove -= lengthdir_y(5, dire);
-}
+	
+	if mouse_check_button_pressed(mb_left) and fire_rate == true
+	{
+		sprite_mouth = random_range(0,6);
+		sprite_left_eye = random_range(0,6)
+		sprite_right_eye = random_range(0,6);
+		obj_scr_output.raw_text += "\nmry_crpt\ninitiate"
+		with(instance_create_layer(x,y,"Bullets",obj_mybullet))
+		{
+			dire = other.dire;
+			hmove = lengthdir_x(other.spd, dire);
+			vmove = lengthdir_y(other.spd, dire);
+		}
+		fire_rate = false
+		alarm[0] = 25;
+		instance_destroy(obj_current_ammo);
+		instance_create_layer(x,y,"Bullets",obj_current_ammo);
+		hmove -= lengthdir_x(5, dire);
+		vmove -= lengthdir_y(5, dire);
+	}
 
-move_and_collide(hmove,vmove,obj_wall);
+	move_and_collide(hmove,vmove,obj_wall);
 }
 else
 {

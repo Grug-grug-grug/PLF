@@ -15,6 +15,11 @@ else if hack_defence == "left"
 		instance_create_layer(x,y,"Bullets",obj_hack_defence_left)
 	instance_destroy();
 }
+else if hack_defence == "final"
+{
+		instance_create_layer(x,y,"Bullets",obj_hack_defence_final)
+	instance_destroy();
+}
 
 
 

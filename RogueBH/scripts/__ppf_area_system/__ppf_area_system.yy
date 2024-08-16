@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"__ppf_area_system",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"__ppf_area_system",
+  "parent":{
+    "name":"Areas",
+    "path":"folders/KazanGames/PostProcessingFX/Core/Modules/Areas.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

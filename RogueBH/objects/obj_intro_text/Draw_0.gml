@@ -1,9 +1,13 @@
 draw_set_valign(fa_middle)
 draw_set_halign(fa_center)
 draw_set_font(fn5)
+
+var _x = camera_get_view_x(view_camera[0])+camera_get_view_width(view_camera[0])/2,
+var _y = camera_get_view_y(view_camera[0])+camera_get_view_height(view_camera[0])/2
 if obj_global.intro_text == 1
 {
-draw_text_shadow("wasd to move\nleft click to send corrupted data\ncorrupt data will overflow memory buffers");
+shadowed_text("wasd to move\nleft click to send corrupted data\ncorrupt data will overflow memory buffers",_x,_y,fn5,fa_center,fa_middle,2,c_white,c_blue,1,.8)
+
 
 }
 else if obj_global.intro_text == 2

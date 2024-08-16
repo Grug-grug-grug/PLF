@@ -1,0 +1,12 @@
+{
+  "$GMShader":"",
+  "%Name":"__ppf_sh_histogram",
+  "name":"__ppf_sh_histogram",
+  "parent":{
+    "name":"EditorUI",
+    "path":"folders/KazanGames/PostProcessingFX/Core/Modules/EditorUI.yy",
+  },
+  "resourceType":"GMShader",
+  "resourceVersion":"2.0",
+  "type":1,
+}

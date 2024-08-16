@@ -1,0 +1,12 @@
+{
+  "$GMShader":"",
+  "%Name":"__ppf_sh_sprite_mask",
+  "name":"__ppf_sh_sprite_mask",
+  "parent":{
+    "name":"Misc",
+    "path":"folders/KazanGames/PostProcessingFX/Core/Shaders/Misc.yy",
+  },
+  "resourceType":"GMShader",
+  "resourceVersion":"2.0",
+  "type":1,
+}

@@ -1,0 +1,12 @@
+{
+  "$GMShader":"",
+  "%Name":"__ppf_sh_ds_box13",
+  "name":"__ppf_sh_ds_box13",
+  "parent":{
+    "name":"Downsampling",
+    "path":"folders/KazanGames/PostProcessingFX/Core/Shaders/Downsampling.yy",
+  },
+  "resourceType":"GMShader",
+  "resourceVersion":"2.0",
+  "type":1,
+}

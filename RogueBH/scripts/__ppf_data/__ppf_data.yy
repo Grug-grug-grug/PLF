@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"__ppf_data",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"__ppf_data",
+  "parent":{
+    "name":"Essential",
+    "path":"folders/KazanGames/PostProcessingFX/Core/Essential.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

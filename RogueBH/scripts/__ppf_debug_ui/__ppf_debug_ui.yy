@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"__ppf_debug_ui",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"__ppf_debug_ui",
+  "parent":{
+    "name":"EditorUI",
+    "path":"folders/KazanGames/PostProcessingFX/Core/Modules/EditorUI.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

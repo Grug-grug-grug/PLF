@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"__ppf_layer_system",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"__ppf_layer_system",
+  "parent":{
+    "name":"Layers",
+    "path":"folders/KazanGames/PostProcessingFX/Core/Modules/Layers.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

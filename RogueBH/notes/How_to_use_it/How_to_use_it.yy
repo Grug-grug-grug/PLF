@@ -1,9 +1,11 @@
 {
-  "resourceType": "GMNotes",
-  "resourceVersion": "1.1",
-  "name": "How_to_use_it",
-  "parent": {
-    "name": "Easy menu",
-    "path": "folders/Easy menu.yy",
+  "$GMNotes":"",
+  "%Name":"How_to_use_it",
+  "name":"How_to_use_it",
+  "parent":{
+    "name":"Easy menu",
+    "path":"folders/Easy menu.yy",
   },
+  "resourceType":"GMNotes",
+  "resourceVersion":"2.0",
 }
