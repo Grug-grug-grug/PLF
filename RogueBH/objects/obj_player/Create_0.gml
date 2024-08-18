@@ -1,7 +1,7 @@
 /// @desc ???
 pixel_fx = layer_get_fx("shake")
 /// @desc ???
-spd = 5;
+spd =4;
 hmove = 0;
 vmove = 0;
 dire = 0;

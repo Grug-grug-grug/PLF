@@ -1,10 +1,10 @@
 /// @desc ???
 
 
-var _x = irandom_range(-50,180)
-var _y = irandom_range(140,340)
+var _x = irandom_range(-880,-500)
+var _y = irandom_range(110,360)
 
-if (_x < 0 or _x > 140) and (_y < 190 or _y > 290)
+if !(_x < -760 and _x > -615) and !(_y > 190 and _y < 280)
 {
 	with(instance_create_layer(_x, _y, "Instances",obj_shooter_spiral))
 	

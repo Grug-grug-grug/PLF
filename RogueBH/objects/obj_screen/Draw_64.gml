@@ -12,15 +12,15 @@ draw_sprite(spr_hack_light_off,0,w_screen*38,h_screen*172);
 		
 if obj_global.completed_repetitions_required > 0
 {
-draw_sprite(spr_hack_light,0,w_screen*8,h_screen*172);
+draw_sprite_ext(spr_hack_light,0,w_screen*8,h_screen*172,1,1,0,c_white,img_alp);
 }
 if obj_global.completed_repetitions_required > 1
 {
-draw_sprite(spr_hack_light,0,w_screen*18,h_screen*172);
+draw_sprite_ext(spr_hack_light,0,w_screen*18,h_screen*172,1,1,0,c_white,img_alp);
 }
 if obj_global.completed_repetitions_required > 2
 {
-draw_sprite(spr_hack_light,0,w_screen*28,h_screen*172);
+draw_sprite_ext(spr_hack_light,0,w_screen*28,h_screen*172,1,1,0,c_white,img_alp);
 }
 if obj_global.completed_repetitions_required > 2
 {

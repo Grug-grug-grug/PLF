@@ -136,7 +136,7 @@ else if hack_timer == hack_time_required
 else
 {
 	hack_timer = 0;
-	if obj_global.player_health != 0
+	if obj_global.player_health != 0 and !mouse_check_button(mb_right)
 	{
 		fx_set_parameter(pixel_fx,"g_CellSize",1)
 	}
