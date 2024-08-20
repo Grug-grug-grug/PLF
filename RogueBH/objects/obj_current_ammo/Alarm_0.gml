@@ -1,7 +1,7 @@
 /// @desc ???
 
 
-image_alpha += 0.01
+actual_alpha += 0.01
 
 
 

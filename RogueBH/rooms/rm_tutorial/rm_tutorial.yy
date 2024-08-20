@@ -71,6 +71,8 @@
     {"name":"inst_1F42755B","path":"rooms/rm_tutorial/rm_tutorial.yy",},
     {"name":"inst_539AD421","path":"rooms/rm_tutorial/rm_tutorial.yy",},
     {"name":"inst_3BB490DB","path":"rooms/rm_tutorial/rm_tutorial.yy",},
+    {"name":"inst_45A4DC8A","path":"rooms/rm_tutorial/rm_tutorial.yy",},
+    {"name":"inst_3063DE8A","path":"rooms/rm_tutorial/rm_tutorial.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -185,6 +187,8 @@
         {"$GMRInstance":"v1","%Name":"inst_7662301","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7662301","objectId":{"name":"obj_wall_destructable","path":"objects/obj_wall_destructable/obj_wall_destructable.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.9999999,"scaleY":1.9999999,"x":280.0,"y":736.0,},
         {"$GMRInstance":"v1","%Name":"inst_79642D88","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_79642D88","objectId":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":2.0,"scaleY":20.0,"x":360.0,"y":192.0,},
         {"$GMRInstance":"v1","%Name":"inst_1F42755B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1F42755B","objectId":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":2.0,"scaleY":4.0,"x":200.0,"y":192.0,},
+        {"$GMRInstance":"v1","%Name":"inst_45A4DC8A","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_45A4DC8A","objectId":{"name":"obj_little_laser","path":"objects/obj_little_laser/obj_little_laser.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.6,"scaleY":2.6,"x":228.0,"y":400.0,},
+        {"$GMRInstance":"v1","%Name":"inst_3063DE8A","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3063DE8A","objectId":{"name":"obj_little_laser","path":"objects/obj_little_laser/obj_little_laser.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.9,"scaleY":0.6,"x":292.0,"y":344.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"Assets_1","assets":[
         {"$GMRSpriteGraphic":"","%Name":"graphic_7B4E4F78_1","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_7B4E4F78_1","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_floor_outer","path":"sprites/spr_floor_outer/spr_floor_outer.yy",},"x":232.0,"y":64.0,},

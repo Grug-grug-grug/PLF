@@ -112,6 +112,15 @@ else if hack_timer == hack_time_required
 	}
 	obj_global.current_hacks += 1;
 	obj_scr_output.raw_text += "\nvuln_fnd"
+
+
+
+
+
+
+
+
+
 	// if everything in room is hacked, then finish and restart the room
 	if obj_global.current_hacks == obj_global.total_number_of_hacks
 	{

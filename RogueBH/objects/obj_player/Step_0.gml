@@ -6,7 +6,42 @@ dir_spd_x = -keyboard_check(ord("A")) + keyboard_check(ord("D"));
 
 dire = point_direction( obj_player.x, obj_player.y, mouse_x,mouse_y);
 
+//draw_sprite(spr_player_alt,0,x,y)
+// sprite legs move in direction of movement
+if dir_spd_x > 0 and dir_spd_y > 0
+{
+	prev_angle = 315
+}
+else if dir_spd_x > 0 and dir_spd_y == 0
+{
+	prev_angle = 0
+}
+else if dir_spd_x > 0 and dir_spd_y < 0
+{
+	prev_angle = 45
+}
+else if dir_spd_x == 0 and dir_spd_y < 0
+{
+	prev_angle = 90
+}
+else if dir_spd_x < 0 and dir_spd_y < 0
+{
+	prev_angle = 135
+}
+else if dir_spd_x < 0 and dir_spd_y == 0
+{
+	prev_angle = 180
+}
+else if dir_spd_x < 0 and dir_spd_y > 0
+{
+	prev_angle = 215
+}
+else if dir_spd_x == 0 and dir_spd_y > 0
+{
+	prev_angle = 270
+}
 
+current_angle = lerp(current_angle,prev_angle,0.2)
 // to stop vibration, need to work out when len between mouse and character < 1 and stop 
 // movement
 

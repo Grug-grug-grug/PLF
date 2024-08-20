@@ -1,6 +1,6 @@
 /// @desc ???
 
-if image_alpha != .7
+if actual_alpha != .7
 {
 	alarm[0] = 1	
 }
