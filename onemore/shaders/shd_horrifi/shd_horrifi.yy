@@ -1,10 +1,12 @@
 {
-  "resourceType": "GMShader",
-  "resourceVersion": "1.0",
-  "name": "shd_horrifi",
-  "parent": {
-    "name": "Horri-fi",
-    "path": "folders/Horri-fi.yy",
+  "$GMShader":"",
+  "%Name":"shd_horrifi",
+  "name":"shd_horrifi",
+  "parent":{
+    "name":"Horri-fi",
+    "path":"folders/Horri-fi.yy",
   },
-  "type": 1,
+  "resourceType":"GMShader",
+  "resourceVersion":"2.0",
+  "type":1,
 }

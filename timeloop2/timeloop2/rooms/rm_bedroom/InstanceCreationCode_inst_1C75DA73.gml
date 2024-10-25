@@ -1,0 +1,1 @@
+walkover_text = "exit_bedroom"

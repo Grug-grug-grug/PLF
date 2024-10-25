@@ -1,9 +1,11 @@
 {
-  "resourceType": "GMNotes",
-  "resourceVersion": "1.1",
-  "name": "Thanks",
-  "parent": {
-    "name": "About",
-    "path": "folders/Horri-fi/About.yy",
+  "$GMNotes":"",
+  "%Name":"Thanks",
+  "name":"Thanks",
+  "parent":{
+    "name":"About",
+    "path":"folders/Horri-fi/About.yy",
   },
+  "resourceType":"GMNotes",
+  "resourceVersion":"2.0",
 }

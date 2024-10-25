@@ -1,0 +1,30 @@
+#__PrivCrochet_version:1
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -151,-55
+__PrivCrochet_tags: 
+title: Start
+---
+<<bg(0)>>
+Seb: Where am I?
+    -> I don't know
+        Seb: Who are you?
+    -> You don't know
+        Seb: suck a fart
+    -> Well...
+        Seb: option 3<<jump NextConvo>>
+===
+__PrivCrochet_colorID: 1
+__PrivCrochet_position: 216,-227
+__PrivCrochet_tags: 
+title: NextConvo
+---
+<<bg(0)>>
+Seb: well fuck
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 773,-154
+__PrivCrochet_tags: 
+title: Node_2
+---
+Empty Text
+===
