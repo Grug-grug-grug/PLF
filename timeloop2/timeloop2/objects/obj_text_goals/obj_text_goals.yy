@@ -9,8 +9,8 @@
   "name":"obj_text_goals",
   "overriddenProperties":[],
   "parent":{
-    "name":"global",
-    "path":"folders/Objects/global.yy",
+    "name":"goals",
+    "path":"folders/Objects/global/goals.yy",
   },
   "parentObjectId":null,
   "persistent":false,

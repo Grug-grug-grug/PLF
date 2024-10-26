@@ -1,0 +1,1 @@
+walkover_text = "stuck_in_loungeroom";

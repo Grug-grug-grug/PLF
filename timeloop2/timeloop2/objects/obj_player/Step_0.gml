@@ -1,3 +1,5 @@
+
+
 if obj_global_timing_tracker.pause == false
 {
 var _dir_spd_y = -keyboard_check(ord("W")) + keyboard_check(ord("S"));
@@ -63,6 +65,18 @@ if _dir_spd_y == 0 and _dir_spd_x == 0
 		image_speed=1;
 	}
 }
+
+if (_dir_spd_y != 0 or _dir_spd_x != 0) and sound_play_delay = 25
+{	
+	sound_play_delay = 0;
+	randomise();
+	var _step_sound_offset = random_range(0,0.01)
+	var _step_sound_pitch = random_range(0.9,1.0)
+	var _snd = audio_play_sound(snd_step,10,false,0.5,_step_sound_offset,_step_sound_pitch);
+}
+else if (_dir_spd_y != 0 or _dir_spd_x != 0)
+{
+	sound_play_delay += 1;
 }
 
 if obj_global_timing_tracker.pause == true 
@@ -71,4 +85,6 @@ last_dir = 2
 sprite_index= Blue_spacesuit_idle_front;
 image_speed=1;
 }
+}
+
 

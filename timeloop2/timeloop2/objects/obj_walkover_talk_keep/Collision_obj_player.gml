@@ -9,5 +9,5 @@ if (can_collide) {
 	dialog_line : walkover_text
 	});
 	ds_map_add(obj_global_current_loop.my_map, walkover_text, 1);
-    alarm[0] = 150;
+    alarm[0] = 300;
 }

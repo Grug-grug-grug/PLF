@@ -6,8 +6,7 @@ current_loop = 1;
 time_tracker = 0;
 
 // the length of each loop and loop tracker
-loop_length = 30;
-current_loop = 0;
+loop_length = 9999;
 
 // variables when moving between rooms
 new_x = 90;

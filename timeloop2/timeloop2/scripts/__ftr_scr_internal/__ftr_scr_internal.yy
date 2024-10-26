@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"__ftr_scr_internal",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"__ftr_scr_internal",
+  "parent":{
+    "name":"Core",
+    "path":"folders/KazanGames/FoxeyTransitionsPro/Core.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

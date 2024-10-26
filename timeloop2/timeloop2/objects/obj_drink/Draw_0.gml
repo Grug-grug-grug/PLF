@@ -1,9 +1,17 @@
-/// @desc ???
 if obj_global_script_tracker.got_drink == 0
+	{
+		draw_sprite(Bar_bottle_orange,0,x,y);
+	}
+/// @desc ???
+if obj_global_timing_tracker.current_loop == 1
 {
-	draw_sprite(Bar_bottle_orange,0,x,y);
+	scribble(dialog_text).draw(x, y, typist);
+	
 }
-if obj_global_script_tracker.got_drink == 1
+else
 {
-	scribble("[fa_centre][wobble][scale,0.5]got a spare drink just in case\nPress P to drink").draw(x, y, typist);
+	if obj_global_script_tracker.got_drink == 1
+	{
+		scribble(dialog_text).draw(x, y, typist);
+	}
 }

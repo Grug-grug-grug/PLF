@@ -32,21 +32,24 @@ function dialog_script_draw(_text_id){
 				dialog_text = "[pulse]...my head..";
 			break;
 			case 1:
-				dialog_text = "...I see whats going on...";
+				dialog_text = "...umm... what is going on...";
 			break;
 			case 2:
-				dialog_text = "Ill put together a to do list";
+				dialog_text = "...really...a time loop...?"
 			break;
 			case 3:
+				dialog_text = "Alright then... lets find out what is happening I guess";
+			break;
+			case 4:
 				dialog_text = "1. I need to find out what is happening";
 				break;
-			case 4:
+			case 5:
 				dialog_text = "2. I should see if anyone it around";
 			break;
-			case 5:
+			case 6:
 				dialog_text = "3. And check the research lab";
 			break;
-			case 6:
+			case 7:
 				dialog_text = "4. And the bio-lab";
 			break;
 			default:
@@ -56,23 +59,59 @@ function dialog_script_draw(_text_id){
 			
 		break;
 		
+		// creepy wake up text
+		
+		case "creepywakeup":
+			
+			switch(ds_map_find_value(obj_global_script_tracker.my_map,"creepywakeup"))
+			{
+			case 0:
+				dialog_text = "what the shit was that";
+			break;
+			case 1:
+				dialog_text = "..what the hell is that about...";
+			break;
+			case 2:
+				dialog_text = "...make it stop...?"
+			break;
+			case 3:
+				dialog_text = "[wave]STOPSTOPSTOPSTOPSTOP";
+			break;
+			case 4:
+				dialog_text = "I can't do much more";
+				break;
+			case 5:
+				dialog_text = "pleasestoppleasestoppleasestop";
+			break;
+			case 6:
+				dialog_text = "3. And check the research lab";
+			break;
+			case 7:
+				dialog_text = "4. And the bio-lab";
+			break;
+			default:
+				dialog_text = "......";
+			break;
+			}
+			
+		break;
 		// finding keycode
 		case "keycode":
 		
 			switch(ds_map_find_value(obj_global_script_tracker.my_map,"keycode"))
 			{
 			case 0:
-				dialog_text = "it says door code?"
+				dialog_text = "its my door code...\nwhy didn't I try my own code...?"
 				obj_global_script_tracker.initial_keycode = 1
 				break;
 			case 1:
-				dialog_text = "the same code door code?"
+				dialog_text = "it is still the same"
 				break;
 			case 2:
-				dialog_text = ".still the same..";
+				dialog_text = "...still the same...";
 				break;
 			default:
-				dialog_text = "......";
+				dialog_text = "...always the same...";
 				break;
 			}
 			
@@ -91,7 +130,7 @@ function dialog_script_draw(_text_id){
 				{
 				
 				case 1:
-					dialog_text = "...thats the code..";
+					dialog_text = "...just my normal code..";
 					obj_global_script_tracker.bedroom_key_1 = 1
 					break;
 				case 2:
@@ -112,17 +151,17 @@ function dialog_script_draw(_text_id){
 		
 			if obj_global_script_tracker.left_door_late = 0
 			{
-				dialog_text = "hmm... too slow..but there is a key hole"
+				dialog_text = "hmm... shut...I should see if someone is in there"
 				obj_global_script_tracker.left_door_late = 1
 			}
 			else if obj_global_script_tracker.left_door_late = 1
 			{
-				dialog_text = "still too slow... there must be a way"
+				dialog_text = "still too slow... I'll find the key.."
 				obj_global_script_tracker.left_door_late = 2
 			}
 			else if obj_global_script_tracker.left_door_late = 2
 			{
-				dialog_text = "Maybe some left some notes"
+				dialog_text = "Maybe there are some notes somewhere else"
 				obj_global_script_tracker.left_door_late = 3
 			}
 			else if obj_global_script_tracker.left_door_late = 3
@@ -154,7 +193,7 @@ function dialog_script_draw(_text_id){
 			{
 				dialog_text = "Its under someones bed"
 			}
-			else if obj_global_script_tracker.left_door_late > 4
+			else if obj_global_script_tracker.left_door_late > 3
 			{
 				if obj_global_script_tracker.left_door_key == 1
 				{
@@ -191,28 +230,29 @@ function dialog_script_draw(_text_id){
 		// finding the notes for the left door to lead you to the spare key under a bed
 		case "left_door_late_key_note":
 		
-			if obj_global_script_tracker.left_door_late > 3
+			if obj_global_script_tracker.left_door_late > 2
 			{
 				dialog_text = "...just gotta work out which bed..."
 			}
-			if obj_global_script_tracker.left_door_late < 3
+			if obj_global_script_tracker.left_door_late < 2
 			{
 				dialog_text = "just some nonsense about doors in the sleeping quarter"
+				
 			}
-			else if obj_global_script_tracker.left_door_late > 2
+			else if obj_global_script_tracker.left_door_late > 1
 			{
-				dialog_text = "ahh.... there is a [wave] secret [/wave] entrance\n...not really...\nit just says the spare key is under [pulse]someones[/pulse] bed..\n...but who?"
-				obj_global_script_tracker.left_door_late = 4
+				dialog_text = "ahh.... there is a [wave] key [/wave] under [pulse]someones[/pulse] bed..\n...but who?"
+				obj_global_script_tracker.left_door_late = 3
 			}		
 		break;
 		
 		// my bed
 		case "my_bed":
-			if obj_global_script_tracker.left_door_late > 4
+			if obj_global_script_tracker.left_door_late > 3
 			{
 				dialog_text = "...still under my bed..."
 			}
-			else if obj_global_script_tracker.left_door_late == 4
+			else if obj_global_script_tracker.left_door_late == 3
 			{
 				dialog_text = "...it cant be...\n it was under my bed..."
 				obj_global_script_tracker.left_door_late = 5
@@ -282,7 +322,7 @@ function dialog_script_draw(_text_id){
 			switch(ds_map_find_value(obj_global_script_tracker.my_map,"exit_bedroom"))
 			{
 			case 0:
-				dialog_text = "[shake] what is [pulse]going[/pulse] on....";
+				dialog_text = "..lets find out whats going on...";
 				break;
 			case 1:
 				dialog_text = "umm... what?";
@@ -333,7 +373,128 @@ function dialog_script_draw(_text_id){
 			
 			
 		break;
-			
+		
+		//top bedroom door
+		
+		case "other_bedroom_door":	
+			switch(ds_map_find_value(obj_global_script_tracker.my_map,"other_bedroom_door"))
+				{
+				default:
+					dialog_text = "I should see if anyone is in there";
+					break;
+				}
+		break;
+		
+		//top bedroom when you enter
+		
+		case "top_left_bedroom":	
+			switch(ds_map_find_value(obj_global_script_tracker.my_map,"top_left_bedroom"))
+				{
+				case 0:
+					dialog_text = "there isnt anyone here....";
+					obj_global_script_tracker.check_top_left_bedroom = 1;
+				break;
+				case 1:
+					dialog_text = "it's still so empty";
+				break;
+				case 2:
+					dialog_text = "there isn't anyone here";
+				break;
+				default:
+					dialog_text = "there is never anyone here";
+				break;
+				}
+		break;
+		
+		// for the lounge, and when you get stuck too
+		case "stuck_in_loungeroom":	
+			switch(ds_map_find_value(obj_global_script_tracker.my_map,"stuck_in_loungeroom"))
+				{
+				default:
+				randomize();
+				response = irandom_range(0,10);
+				if obj_global_timing_tracker.time_tracker > 15 and obj_global_script_tracker.left_door_key == 0
+					{
+						switch response
+					{
+						case 0:
+						dialog_text = "rats";
+						break;
+						case 1:
+						dialog_text = "...Im stuck...";
+						break;
+						case 2:
+						dialog_text = "[pulse] let me out";
+						break;
+						case 3:
+						dialog_text = "[wave]HEEELLP";
+						break;
+						case 4:
+						dialog_text = "please....";
+						break;
+						case 5:
+						dialog_text = "pleeeease!";
+						break;
+						case 6:
+						dialog_text = "How to I get out!?!?";
+						break;
+						case 7:
+						dialog_text = "ANYONE OUT THERE?";
+						break;
+						case 8:
+						dialog_text = "what do I do....";
+						break;
+						case 9:
+						dialog_text = "....";
+						break;
+						case 10:
+						dialog_text = ".....?";
+						break;
+					}
+					}
+					else
+					{
+						switch response
+						{
+							case 0:
+							dialog_text = "Some good memories in here";
+							break;
+							case 1:
+							dialog_text = "Slept off many nights on those lounges";
+							break;
+							case 2:
+							dialog_text = "We used this spot to pass the long boring hours";
+							break;
+							case 3:
+							dialog_text = "We'd discuss why we ever decided to come on this trip";
+							break;
+							case 4:
+							dialog_text = "I came on this trip to get away";
+							break;
+							case 5:
+							dialog_text = "I feel more stuck then ever";
+							break;
+							case 6:
+							dialog_text = "Sometimes I wish I never come";
+							break;
+							case 7:
+							dialog_text = "I wonder where everyone is";
+							break;
+							case 8:
+							dialog_text = ".....";
+							break;
+							case 9:
+							dialog_text = "I hope this ends soon";
+							break;
+							case 10:
+							dialog_text = "...maybe I should grab a drink and wait on the lounge..";
+							break;
+						}
+					}
+				}
+		break;
+		
+		// random notes in the common room
 		case "notes_common_1":	
 			switch(ds_map_find_value(obj_global_script_tracker.my_map,"notes_common_1"))
 				{
